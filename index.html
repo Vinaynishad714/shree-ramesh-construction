@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shree Ramesh Construction Material</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#f4f4f4;
+}
+
+/* Loader */
+#loader{
+position:fixed;
+width:100%;
+height:100%;
+background:#222;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:24px;
+z-index:9999;
+}
+
+/* Welcome Popup */
+.popup{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.7);
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:9998;
+}
+
+.popup-box{
+background:white;
+padding:30px;
+border-radius:10px;
+text-align:center;
+}
+
+.popup-box h2{
+color:#ff9800;
+}
+
+header{
+background:#222;
+color:white;
+padding:15px 5%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:22px;
+color:#ff9800;
+font-weight:bold;
+}
+
+nav a{
+color:white;
+margin:0 10px;
+text-decoration:none;
+}
+
+.hero{
+background:url("https://images.unsplash.com/photo-1504307651254-35680f356dfd") center/cover;
+height:70vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+background-color:rgba(0,0,0,0.6);
+background-blend-mode:darken;
+}
+
+.btn{
+background:#ff9800;
+padding:12px 25px;
+border:none;
+color:white;
+cursor:pointer;
+}
+
+.section{
+padding:50px 5%;
+text-align:center;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+border-radius:10px;
+padding:20px;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.card img{
+width:100%;
+border-radius:8px;
+}
+
+.price{
+color:#ff9800;
+font-weight:bold;
+}
+
+.gallery img{
+height:200px;
+object-fit:cover;
+}
+
+.contact{
+background:white;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50%;
+font-size:20px;
+text-decoration:none;
+}
+
+.call{
+position:fixed;
+bottom:80px;
+right:20px;
+background:#ff9800;
+color:white;
+padding:15px;
+border-radius:50%;
+text-decoration:none;
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:15px;
+}
+</style>
+</head>
+
+<body>
+
+<div id="loader">Loading Website...</div>
+
+<div id="welcomePopup" class="popup">
+<div class="popup-box">
+<h2>Welcome</h2>
+<p>Welcome to Shree Ramesh Construction Material</p>
+<button class="btn" onclick="closePopup()">Enter Website</button>
+</div>
+</div>
+
+<header>
+<div class="logo">Shree Ramesh Material</div>
+<nav>
+<a href="#">Home</a>
+<a href="#products">Products</a>
+<a href="#price">Price</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Best Quality Construction Materials</h1>
+<p>Cement | Sariya | Gitti | Balu | Bricks Available</p>
+</section>
+
+<section id="products" class="section">
+<h2>Our Products</h2>
+<div class="grid">
+
+<div class="card">
+<img src="https://placehold.co/300x200?text=Cement">
+<h3>Cement</h3>
+<p class="price">₹350 / Bag</p>
+</div>
+
+<div class="card">
+<img src="https://placehold.co/300x200?text=TMT+Sariya">
+<h3>TMT Sariya</h3>
+<p class="price">₹45000 / Ton</p>
+</div>
+
+<div class="card">
+<img src="https://placehold.co/300x200?text=Gitti">
+<h3>Gitti</h3>
+<p>All Sizes Available</p>
+</div>
+
+<div class="card">
+<img src="https://placehold.co/300x200?text=Balu">
+<h3>Balu (Sand)</h3>
+<p>River Sand Available</p>
+</div>
+
+</div>
+</section>
+
+<section id="price" class="section">
+<h2>Today's Price List</h2>
+<div class="grid">
+<div class="card">Ultratech Cement – ₹350</div>
+<div class="card">ACC Cement – ₹345</div>
+<div class="card">Ambuja Cement – ₹340</div>
+<div class="card">TMT Sariya – ₹45000 / Ton</div>
+</div>
+</section>
+
+<section id="gallery" class="section">
+<h2>Shop Gallery</h2>
+<div class="grid gallery">
+<img src="https://placehold.co/300x200?text=Shop+1">
+<img src="https://placehold.co/300x200?text=Material">
+<img src="https://placehold.co/300x200?text=Truck+Loading">
+<img src="https://placehold.co/300x200?text=Stock">
+</div>
+</section>
+
+<section id="contact" class="section contact">
+<h2>Contact Us</h2>
+
+<p><b>Address:</b> Raji Akala No.1, Post Gulhariya Medical College Road, Gorakhpur</p>
+<p><b>Phone:</b> 9792246824 | 8400879638</p>
+
+<iframe
+src="https://maps.google.com/maps?q=gulhariya%20medical%20college%20road%20gorakhpur&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%"
+height="300"
+style="border:0;">
+</iframe>
+
+<br><br>
+
+<a href="tel:9792246824">
+<button class="btn">Call Now</button>
+</a>
+
+</section>
+
+<footer>
+© 2026 Shree Ramesh Construction Material
+</footer>
+
+<a class="whatsapp" href="https://wa.me/919792246824">W</a>
+<a class="call" href="tel:9792246824">📞</a>
+
+<script>
+window.onload=function(){
+setTimeout(function(){
+document.getElementById("loader").style.display="none";
+},1500);
+}
+
+function closePopup(){
+document.getElementById("welcomePopup").style.display="none";
+}
+</script>
+
+</body>
+</html>
