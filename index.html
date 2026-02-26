@@ -11,7 +11,7 @@
 body{
 margin:0;
 font-family:Arial, sans-serif;
-background:#f5f7fa;
+background:#eef2f7;
 }
 
 /* HEADER */
@@ -76,6 +76,7 @@ cursor:pointer;
 text-decoration:none;
 display:inline-block;
 font-weight:bold;
+border-radius:6px;
 }
 
 /* ORDER ROW */
@@ -87,7 +88,6 @@ margin-top:25px;
 flex-wrap:wrap;
 }
 
-/* 3D ICON STYLE */
 .icon-3d{
 width:60px;
 height:60px;
@@ -107,13 +107,8 @@ transform:translateY(4px);
 box-shadow:0 2px 0 rgba(0,0,0,0.3);
 }
 
-.whatsapp-bg{
-background:#25D366;
-}
-
-.call-bg{
-background:#ff7a00;
-}
+.whatsapp-bg{ background:#25D366; }
+.call-bg{ background:#ff7a00; }
 
 .action-box{
 display:flex;
@@ -129,32 +124,53 @@ color:white;
 
 /* MATERIAL LIST */
 .materials{
-padding:60px 8%;
+padding:70px 8%;
 text-align:center;
 background:#ffffff;
 }
 
 .materials h2{
-font-size:28px;
-margin-bottom:40px;
+font-size:30px;
+margin-bottom:50px;
 color:#0f2747;
 }
 
 .material-grid{
 display:grid;
 grid-template-columns:repeat(3,1fr);
-gap:30px;
+gap:40px;
 }
 
+/* PROFESSIONAL 3D BOX */
 .material-item{
-font-size:26px;
-font-weight:bold;
-padding:30px;
-background:#f5f7fa;
-border-radius:12px;
-box-shadow:0 8px 20px rgba(0,0,0,0.08);
+padding:35px;
+border-radius:15px;
+background:linear-gradient(145deg,#ffffff,#dfe6ee);
+box-shadow:8px 8px 20px rgba(0,0,0,0.15),
+-8px -8px 20px rgba(255,255,255,0.9);
+transition:0.3s;
 }
 
+.material-item:hover{
+transform:translateY(-8px);
+box-shadow:12px 12px 25px rgba(0,0,0,0.2),
+-6px -6px 20px rgba(255,255,255,1);
+}
+
+.material-name{
+font-size:28px;
+font-weight:bold;
+color:#0f2747;
+}
+
+.material-price{
+margin-top:10px;
+font-size:20px;
+color:#25D366;
+font-weight:bold;
+}
+
+/* RESPONSIVE */
 @media(max-width:768px){
 .material-grid{
 grid-template-columns:repeat(2,1fr);
@@ -236,7 +252,6 @@ font-size:14px;
 <a href="tel:9792246824" class="btn">Get Best Price</a>
 
 <div class="order-row">
-
 <div class="action-box">
 <a href="https://wa.me/919792246824" class="icon-3d whatsapp-bg">
 <i class="fab fa-whatsapp"></i>
@@ -250,18 +265,33 @@ font-size:14px;
 </a>
 <div class="action-text">Call Now</div>
 </div>
-
 </div>
 </section>
 
-<!-- MATERIAL LIST -->
+<!-- MATERIAL SECTION -->
 <section class="materials">
 <h2>Available Materials</h2>
+
 <div class="material-grid">
-<div class="material-item">सीमेंट</div>
-<div class="material-item">सरिया</div>
-<div class="material-item">बालू</div>
-<div class="material-item">गिट्टी</div>
+<div class="material-item">
+<div class="material-name">सीमेंट</div>
+<div class="material-price">₹380 / Bag</div>
+</div>
+
+<div class="material-item">
+<div class="material-name">सरिया</div>
+<div class="material-price">₹60 / Kg</div>
+</div>
+
+<div class="material-item">
+<div class="material-name">बालू</div>
+<div class="material-price">₹55 / CFT</div>
+</div>
+
+<div class="material-item">
+<div class="material-name">गिट्टी</div>
+<div class="material-price">₹65 / CFT</div>
+</div>
 </div>
 </section>
 
@@ -276,7 +306,6 @@ loading="lazy">
 </iframe>
 
 <div class="features">
-
 <div class="feature-box">
 <i class="fas fa-award"></i>
 <h3>15+ Years Experience</h3>
@@ -296,7 +325,6 @@ loading="lazy">
 <i class="fas fa-truck-fast"></i>
 <h3>Fast Delivery</h3>
 </div>
-
 </div>
 </section>
 
@@ -305,4 +333,4 @@ loading="lazy">
 </footer>
 
 </body>
-  </html>
+</html>
