@@ -14,12 +14,11 @@
 
 <style>
 body { font-family: 'Poppins', sans-serif; }
+
 .hero-bg {
-background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
-url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1950&q=80');
-background-size: cover;
-background-position: center;
+background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
 }
+
 .product-card:hover {
 transform: translateY(-10px);
 box-shadow: 0 10px 20px rgba(0,0,0,0.2);
@@ -32,7 +31,9 @@ theme: {
 extend: {
 colors: {
 brand: '#f97316',
-dark: '#1f2937'
+primary: '#0f172a',
+secondary: '#1e3a8a',
+lightbg: '#f3f4f6'
 }
 }
 }
@@ -40,10 +41,10 @@ dark: '#1f2937'
 </script>
 </head>
 
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-lightbg text-gray-800">
 
 <!-- Navbar -->
-<nav class="bg-dark text-white fixed w-full z-50 shadow-lg">
+<nav class="bg-primary text-white fixed w-full z-50 shadow-lg">
 <div class="container mx-auto px-6 py-4 flex justify-between items-center">
 <div class="text-2xl font-bold flex items-center gap-2">
 <i class="fa-solid fa-layer-group text-brand"></i> Shree Ramesh
@@ -62,7 +63,7 @@ onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
 </button>
 </div>
 
-<div id="mobile-menu" class="hidden md:hidden bg-dark p-4 space-y-4">
+<div id="mobile-menu" class="hidden md:hidden bg-primary p-4 space-y-4">
 <a href="#home" class="block hover:text-brand">Home</a>
 <a href="#products" class="block hover:text-brand">Products</a>
 <a href="#pricelist" class="block hover:text-brand">Price List</a>
@@ -85,50 +86,34 @@ class="bg-brand text-white font-bold py-3 px-8 rounded-full hover:scale-105 tran
 View Products
 </a>
 <a href="#contact"
-class="bg-white text-dark font-bold py-3 px-8 rounded-full hover:scale-105 transition">
+class="bg-white text-primary font-bold py-3 px-8 rounded-full hover:scale-105 transition">
 Contact Now
 </a>
 </div>
 </div>
 </section>
 
-<!-- Trust Section -->
-<section class="py-16 bg-white">
+<!-- Founder Section -->
+<section class="py-20 bg-white text-center">
 <div class="container mx-auto px-6">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+<h2 class="text-4xl font-bold mb-10">
+Meet Our <span class="text-brand">Founder</span>
+</h2>
 
-<div>
-<i class="fa-solid fa-award text-4xl text-brand mb-4"></i>
-<h3 class="font-bold text-xl">10+ Years Experience</h3>
-<p class="text-gray-500 text-sm">Trusted by Contractors</p>
-</div>
+<img src="papa.jpg" alt="Founder"
+class="w-60 h-60 mx-auto rounded-full shadow-lg object-cover border-4 border-brand">
 
-<div>
-<i class="fa-solid fa-truck text-4xl text-brand mb-4"></i>
-<h3 class="font-bold text-xl">Fast Delivery</h3>
-<p class="text-gray-500 text-sm">Same Day Delivery</p>
-</div>
-
-<div>
-<i class="fa-solid fa-shield-halved text-4xl text-brand mb-4"></i>
-<h3 class="font-bold text-xl">Genuine Material</h3>
-<p class="text-gray-500 text-sm">100% Quality Assured</p>
-</div>
-
-<div>
-<i class="fa-solid fa-indian-rupee-sign text-4xl text-brand mb-4"></i>
-<h3 class="font-bold text-xl">Best Price</h3>
-<p class="text-gray-500 text-sm">Competitive Market Rates</p>
-</div>
-
-</div>
+<h3 class="text-2xl font-bold mt-6">Shri Ramesh Ji</h3>
+<p class="text-gray-600 mt-2">
+Founder & Owner - 10+ Years Experience in Construction Material Supply
+</p>
 </div>
 </section>
 
 <!-- Products -->
 <section id="products" class="py-20 container mx-auto px-6">
 <div class="text-center mb-16">
-<h2 class="text-4xl font-bold text-dark mb-4">
+<h2 class="text-4xl font-bold">
 Our <span class="text-brand">Products</span>
 </h2>
 </div>
@@ -159,11 +144,11 @@ Our <span class="text-brand">Products</span>
 </section>
 
 <!-- Price List -->
-<section id="pricelist" class="py-20 bg-gray-100">
+<section id="pricelist" class="py-20 bg-white">
 <div class="container mx-auto px-6">
 <div class="overflow-x-auto bg-white rounded-lg shadow-lg">
 <table class="w-full text-left">
-<thead class="bg-dark text-white">
+<thead class="bg-primary text-white">
 <tr>
 <th class="p-4">Material</th>
 <th class="p-4">Brand</th>
@@ -191,24 +176,22 @@ Our <span class="text-brand">Products</span>
 </section>
 
 <!-- Contact -->
-<section id="contact" class="py-20 bg-gray-100">
-<div class="container mx-auto px-6">
-<div class="grid md:grid-cols-2 gap-10">
+<section id="contact" class="py-20 bg-lightbg">
+<div class="container mx-auto px-6 grid md:grid-cols-2 gap-10">
 <div>
-<p class="mb-2"><i class="fa-solid fa-phone text-brand mr-2"></i>9792246824</p>
-<p class="mb-2"><i class="fa-solid fa-phone text-brand mr-2"></i>8400879638</p>
-<p class="mb-2"><i class="fa-solid fa-location-dot text-brand mr-2"></i>Gulhariya Bazar, Gorkhpur</p>
-<p class="mb-2"><i class="fa-solid fa-clock text-brand mr-2"></i>8 AM - 8 PM</p>
+<p><i class="fa-solid fa-phone text-brand mr-2"></i>9792246824</p>
+<p><i class="fa-solid fa-phone text-brand mr-2"></i>8400879638</p>
+<p><i class="fa-solid fa-location-dot text-brand mr-2"></i>Gulhariya Bazar, Gorkhpur</p>
+<p><i class="fa-solid fa-clock text-brand mr-2"></i>8 AM - 8 PM</p>
 </div>
 <div>
 <iframe src="https://www.google.com/maps?q=Gulhariya+Bazar+Gorakhpur&output=embed"
 class="w-full h-80 rounded-lg shadow-lg"></iframe>
 </div>
 </div>
-</div>
 </section>
 
-<!-- WhatsApp Floating -->
+<!-- WhatsApp Button -->
 <a href="https://wa.me/919792246824" target="_blank"
 class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg text-2xl z-50">
 <i class="fa-brands fa-whatsapp"></i>
