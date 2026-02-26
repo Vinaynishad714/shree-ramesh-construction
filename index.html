@@ -122,7 +122,7 @@ font-weight:bold;
 color:white;
 }
 
-/* MATERIAL LIST */
+/* MATERIAL SECTION */
 .materials{
 padding:70px 8%;
 text-align:center;
@@ -141,7 +141,6 @@ grid-template-columns:repeat(3,1fr);
 gap:40px;
 }
 
-/* PROFESSIONAL 3D BOX */
 .material-item{
 padding:35px;
 border-radius:15px;
@@ -159,13 +158,11 @@ box-shadow:12px 12px 25px rgba(0,0,0,0.2),
 -6px -6px 20px rgba(255,255,255,1);
 }
 
-/* TAP GLOW EFFECT (Website Blue) */
 .material-item:active{
 transform:translateY(4px);
 box-shadow:0 20px 40px rgba(15,39,71,0.6);
 }
 
-/* BOTTOM GLOW */
 .material-item::after{
 content:"";
 position:absolute;
@@ -218,14 +215,6 @@ text-align:center;
 padding:60px 8%;
 }
 
-iframe{
-border-radius:12px;
-width:100%;
-height:350px;
-border:0;
-margin-top:20px;
-}
-
 .features{
 display:flex;
 justify-content:center;
@@ -249,6 +238,14 @@ margin-bottom:10px;
 font-size:16px;
 margin:0;
 color:white;
+}
+
+iframe{
+border-radius:12px;
+width:100%;
+height:350px;
+border:0;
+margin-top:30px;
 }
 
 /* FOOTER */
@@ -323,13 +320,32 @@ font-size:14px;
 
 <section id="contact" class="contact">
 <h2>Contact Us</h2>
+
 <p>📍 Raji Akala No.1, Gulhariya Medical College Road, Gorakhpur</p>
 <p>📞 9792246824 | 8400879638</p>
+
+<div class="features">
+<div class="feature-box">
+<i class="fas fa-truck"></i>
+<h3>Fast Delivery</h3>
+</div>
+
+<div class="feature-box">
+<i class="fas fa-award"></i>
+<h3>Best Quality</h3>
+</div>
+
+<div class="feature-box">
+<i class="fas fa-headset"></i>
+<h3>24/7 Support</h3>
+</div>
+</div>
 
 <iframe 
 src="https://www.google.com/maps?q=Raji%20Akala%20No.1%2C%20Gulhariya%20Medical%20College%20Road%2C%20Gorakhpur&output=embed"
 loading="lazy">
 </iframe>
+
 </section>
 
 <footer>
