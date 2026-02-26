@@ -12,7 +12,6 @@ body{
 margin:0;
 font-family:Arial, sans-serif;
 background:#f5f7fa;
-overflow-x:hidden;
 }
 
 /* HEADER */
@@ -54,7 +53,7 @@ padding:0 8%;
 }
 
 .hero h1{
-font-size:40px;
+font-size:42px;
 margin:0;
 }
 
@@ -108,8 +107,15 @@ transform:translateY(4px);
 box-shadow:0 2px 0 rgba(0,0,0,0.3);
 }
 
-.whatsapp-bg{ background:#25D366; }
-.call-bg{ background:#ff7a00; }
+/* WhatsApp Color */
+.whatsapp-bg{
+background:#25D366;
+}
+
+/* Call Color */
+.call-bg{
+background:#ff7a00;
+}
 
 .action-box{
 display:flex;
@@ -151,12 +157,17 @@ text-align:center;
 
 .feature-box{
 width:170px;
-transition:transform 0.2s ease;
+}
+
+.feature-box i{
+font-size:45px;
+color:white;
+margin-bottom:10px;
 }
 
 .feature-box h3{
 font-size:16px;
-margin-top:12px;
+margin:0;
 color:white;
 }
 
@@ -190,6 +201,7 @@ font-size:14px;
 
 <div class="order-row">
 
+<!-- WhatsApp -->
 <div class="action-box">
 <a href="https://wa.me/919792246824" class="icon-3d whatsapp-bg">
 <i class="fab fa-whatsapp"></i>
@@ -197,6 +209,7 @@ font-size:14px;
 <div class="action-text">Order Now</div>
 </div>
 
+<!-- Call -->
 <div class="action-box">
 <a href="tel:9792246824" class="icon-3d call-bg">
 <i class="fas fa-phone"></i>
@@ -205,6 +218,7 @@ font-size:14px;
 </div>
 
 </div>
+
 </section>
 
 <!-- CONTACT -->
@@ -214,61 +228,39 @@ font-size:14px;
 <p>📞 9792246824 | 8400879638</p>
 
 <iframe 
-src="https://www.google.com/maps?q=Raji%20Akala%20No.1%2C%20Gulhariya%20Medical%20College%20Road%2C%20Gulhariya&output=embed"
+src="https://www.google.com/maps?q=Raji%20Akala%20No.1%2C%20Gulhariya%20Medical%20College%20Road%2C%20Gorakhpur&output=embed"
 loading="lazy">
 </iframe>
 
 <div class="features">
 
 <div class="feature-box">
-<div class="icon-3d call-bg">
 <i class="fas fa-award"></i>
-</div>
 <h3>15+ Years Experience</h3>
 </div>
 
 <div class="feature-box">
-<div class="icon-3d whatsapp-bg">
 <i class="fas fa-shield-halved"></i>
-</div>
 <h3>Trusted Seller</h3>
 </div>
 
 <div class="feature-box">
-<div class="icon-3d call-bg">
 <i class="fas fa-check-circle"></i>
-</div>
 <h3>Quality Checked</h3>
 </div>
 
 <div class="feature-box">
-<div class="icon-3d whatsapp-bg">
 <i class="fas fa-truck-fast"></i>
-</div>
 <h3>Fast Delivery</h3>
 </div>
 
 </div>
+
 </section>
 
 <footer>
 © 2026 Shree Ramesh Construction Material | All Rights Reserved
 </footer>
-
-<!-- MOBILE SHAKE EFFECT -->
-<script>
-if (window.DeviceMotionEvent) {
-    window.addEventListener("devicemotion", function(event) {
-        let acc = event.accelerationIncludingGravity;
-        let moveX = acc.x * 2;
-        let moveY = acc.y * 2;
-
-        document.querySelectorAll(".feature-box").forEach(function(box){
-            box.style.transform = "translate(" + moveX + "px," + moveY + "px)";
-        });
-    });
-}
-</script>
 
 </body>
 </html>
