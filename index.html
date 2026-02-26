@@ -4,9 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Shree Ramesh Construction Material</title>
-<meta name="description" content="Shree Ramesh Construction Material - Best construction material supplier in Gorakhpur. Cement, TMT Sariya, Gitti & Balu available at best rates.">
 
-<!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
@@ -66,7 +64,6 @@ color:#ff7a00;
 .hero p{
 font-size:18px;
 margin-top:15px;
-max-width:600px;
 }
 
 .btn{
@@ -81,61 +78,55 @@ display:inline-block;
 font-weight:bold;
 }
 
-/* SECTION */
-.section{
-padding:70px 8%;
-text-align:center;
+/* ORDER ROW */
+.order-row{
+display:flex;
+align-items:center;
+gap:40px;
+margin-top:25px;
+flex-wrap:wrap;
 }
 
-.section h2{
-font-size:32px;
-margin-bottom:40px;
-color:#0f2747;
-}
-
-.product-list{
-text-align:left;
-max-width:500px;
-margin:0 auto;
-font-size:20px;
-line-height:2.2;
-}
-
-.product-list b{
-color:#ff7a00;
-}
-
-/* ICON FEATURES */
-.features{
+/* 3D ICON STYLE */
+.icon-3d{
+width:60px;
+height:60px;
+border-radius:50%;
 display:flex;
 justify-content:center;
-flex-wrap:wrap;
-gap:50px;
-padding:60px 8%;
-background:white;
-text-align:center;
+align-items:center;
+color:white;
+font-size:26px;
+text-decoration:none;
+box-shadow:0 6px 0 rgba(0,0,0,0.3), 0 10px 20px rgba(0,0,0,0.4);
+transition:0.2s;
 }
 
-.feature-box{
-width:180px;
+.icon-3d:hover{
+transform:translateY(4px);
+box-shadow:0 2px 0 rgba(0,0,0,0.3);
 }
 
-.feature-box i{
-font-size:50px;
-color:#0f2747;
-margin-bottom:15px;
-transition:0.3s;
+/* WhatsApp Color */
+.whatsapp-bg{
+background:#25D366;
 }
 
-.feature-box i:hover{
-color:#ff7a00;
-transform:scale(1.2);
+/* Call Color */
+.call-bg{
+background:#ff7a00;
 }
 
-.feature-box h3{
-font-size:18px;
-margin:0;
-color:#333;
+.action-box{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.action-text{
+font-size:20px;
+font-weight:bold;
+color:white;
 }
 
 /* CONTACT */
@@ -146,16 +137,38 @@ text-align:center;
 padding:60px 8%;
 }
 
-.contact h2{
-color:#ff7a00;
-}
-
 iframe{
 border-radius:12px;
 width:100%;
 height:350px;
 border:0;
 margin-top:20px;
+}
+
+/* FEATURES */
+.features{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:40px;
+margin-top:40px;
+text-align:center;
+}
+
+.feature-box{
+width:170px;
+}
+
+.feature-box i{
+font-size:45px;
+color:white;
+margin-bottom:10px;
+}
+
+.feature-box h3{
+font-size:16px;
+margin:0;
+color:white;
 }
 
 /* FOOTER */
@@ -166,31 +179,6 @@ text-align:center;
 padding:20px;
 font-size:14px;
 }
-
-/* FLOAT BUTTONS */
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px;
-border-radius:50%;
-text-decoration:none;
-font-size:20px;
-}
-
-.call{
-position:fixed;
-bottom:80px;
-right:20px;
-background:#ff7a00;
-color:white;
-padding:15px;
-border-radius:50%;
-text-decoration:none;
-font-size:18px;
-}
 </style>
 </head>
 
@@ -200,7 +188,6 @@ font-size:18px;
 <div class="logo">Shree Ramesh Construction Material</div>
 <nav>
 <a href="#">Home</a>
-<a href="#products">Products</a>
 <a href="#contact">Contact</a>
 </nav>
 </header>
@@ -208,24 +195,44 @@ font-size:18px;
 <!-- HERO -->
 <section class="hero">
 <h1>Shree Ramesh <span>Construction Material</span></h1>
-<p>Premium Quality Construction Materials in Gorakhpur. Best brands at best rates.</p>
+<p>Premium Quality Construction Materials in Gorakhpur.</p>
+
 <a href="tel:9792246824" class="btn">Get Best Price</a>
-</section>
 
-<!-- PRODUCTS -->
-<section id="products" class="section">
-<h2>Products & Prices</h2>
+<div class="order-row">
 
-<div class="product-list">
-<p><b>Cement:</b> ₹350 / Bag</p>
-<p><b>TMT Sariya:</b> ₹46,000 / Ton</p>
-<p><b>Stone Gitti:</b> ₹55 / Cubic Ft</p>
-<p><b>River Sand (Balu):</b> ₹45 / Cubic Ft</p>
+<!-- WhatsApp -->
+<div class="action-box">
+<a href="https://wa.me/919792246824" class="icon-3d whatsapp-bg">
+<i class="fab fa-whatsapp"></i>
+</a>
+<div class="action-text">Order Now</div>
 </div>
+
+<!-- Call -->
+<div class="action-box">
+<a href="tel:9792246824" class="icon-3d call-bg">
+<i class="fas fa-phone"></i>
+</a>
+<div class="action-text">Call Now</div>
+</div>
+
+</div>
+
 </section>
 
-<!-- ICON FEATURES -->
-<section class="features">
+<!-- CONTACT -->
+<section id="contact" class="contact">
+<h2>Contact Us</h2>
+<p>📍 Raji Akala No.1, Gulhariya Medical College Road, Gorakhpur</p>
+<p>📞 9792246824 | 8400879638</p>
+
+<iframe 
+src="https://www.google.com/maps?q=Raji%20Akala%20No.1%2C%20Gulhariya%20Medical%20College%20Road%2C%20Gorakhpur&output=embed"
+loading="lazy">
+</iframe>
+
+<div class="features">
 
 <div class="feature-box">
 <i class="fas fa-award"></i>
@@ -247,32 +254,13 @@ font-size:18px;
 <h3>Fast Delivery</h3>
 </div>
 
-</section>
+</div>
 
-<!-- CONTACT -->
-<section id="contact" class="contact">
-<h2>Contact Us</h2>
-<p>📍 Raji Akala No.1, Gulhariya Medical College Road, Gorakhpur</p>
-<p>📞 9792246824 | 8400879638</p>
-<a href="tel:9792246824" class="btn">Call Now</a>
-
-<iframe 
-src="https://www.google.com/maps?q=Raji%20Akala%20No.1%2C%20Gulhariya%20Medical%20College%20Road%2C%20Gorakhpur&output=embed"
-loading="lazy">
-</iframe>
 </section>
 
 <footer>
 © 2026 Shree Ramesh Construction Material | All Rights Reserved
 </footer>
 
-<a class="whatsapp" href="https://wa.me/919792246824">
-<i class="fab fa-whatsapp"></i>
-</a>
-
-<a class="call" href="tel:9792246824">
-<i class="fas fa-phone"></i>
-</a>
-
 </body>
-</html>
+  </html>
