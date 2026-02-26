@@ -40,7 +40,7 @@ font-size:14px;
 /* HERO */
 .hero{
 background:linear-gradient(rgba(15,39,71,0.85),rgba(15,39,71,0.85)),
-url("papa.jpg");
+url("https://images.unsplash.com/photo-1581091012184-49dd9f81f0ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080");
 background-size:cover;
 background-position:center;
 color:white;
@@ -90,39 +90,16 @@ margin-bottom:40px;
 color:#0f2747;
 }
 
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
+.product-list{
+text-align:left;
+max-width:500px;
+margin:0 auto;
+font-size:20px;
+line-height:2.2;
 }
 
-.card{
-background:white;
-border-radius:12px;
-overflow:hidden;
-box-shadow:0 8px 20px rgba(0,0,0,0.1);
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-}
-
-.card img{
-width:100%;
-height:220px;
-object-fit:cover;
-}
-
-.card-content{
-padding:18px;
-}
-
-.price{
+.product-list b{
 color:#ff7a00;
-font-weight:bold;
-font-size:18px;
-margin-top:8px;
 }
 
 /* CONTACT */
@@ -135,6 +112,13 @@ padding:60px 8%;
 
 .contact h2{
 color:#ff7a00;
+}
+
+.trust{
+margin-top:30px;
+font-size:18px;
+color:#ffd700;
+line-height:1.8;
 }
 
 /* FOOTER */
@@ -194,56 +178,11 @@ text-decoration:none;
 <section id="products" class="section">
 <h2>Products & Prices</h2>
 
-<div class="grid">
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1575456074261-7ce4078b76b7">
-<div class="card-content">
-<h3>Ultratech Cement</h3>
-<p class="price">₹350 / Bag</p>
-</div>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1619902122750-3cc07c64b7ae">
-<div class="card-content">
-<h3>ACC Cement</h3>
-<p class="price">₹345 / Bag</p>
-</div>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1580906850164-632c27e37fc3">
-<div class="card-content">
-<h3>Ambuja Cement</h3>
-<p class="price">₹340 / Bag</p>
-</div>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1581091012184-49dd9f81f0ee">
-<div class="card-content">
-<h3>TMT Steel Bars</h3>
-<p class="price">₹46000 / Ton</p>
-</div>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df">
-<div class="card-content">
-<h3>Stone Gitti (20mm/40mm)</h3>
-<p class="price">₹55 / Cubic Ft</p>
-</div>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd">
-<div class="card-content">
-<h3>River Sand (Balu)</h3>
-<p class="price">₹45 / Cubic Ft</p>
-</div>
-</div>
-
+<div class="product-list">
+<p><b>Cement:</b> ₹350 / Bag</p>
+<p><b>TMT Sariya:</b> ₹46,000 / Ton</p>
+<p><b>Stone Gitti:</b> ₹55 / Cubic Ft</p>
+<p><b>River Sand (Balu):</b> ₹45 / Cubic Ft</p>
 </div>
 </section>
 
@@ -265,6 +204,15 @@ style="border:0; border-radius:12px;"
 allowfullscreen="" 
 loading="lazy">
 </iframe>
+
+<!-- TRUST LINES -->
+<div class="trust">
+<p>✅ 15 Years Trusted Material Supplier</p>
+<p>✅ Expert Dhalai Experience</p>
+<p>✅ Quality Checked Materials for Every Project</p>
+<p>✅ Timely Delivery & Contractor Friendly Rates</p>
+</div>
+
 </section>
 
 <footer>
