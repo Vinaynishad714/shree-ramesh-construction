@@ -11,25 +11,24 @@
 body{
 margin:0;
 font-family:Arial, sans-serif;
-background:#0b1423;
-color:white;
+background:#eef2f7;
 }
 
 /* HEADER */
 header{
-background:#111c2e;
+background:#0f2747;
+color:white;
 padding:15px 6%;
 display:flex;
 justify-content:space-between;
 align-items:center;
 flex-wrap:wrap;
-box-shadow:0 4px 15px rgba(0,0,0,0.6);
 }
 
 .logo{
 font-size:22px;
 font-weight:bold;
-color:#25D366;
+color:#ff7a00;
 }
 
 nav a{
@@ -41,10 +40,11 @@ font-size:14px;
 
 /* HERO */
 .hero{
-background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+background:linear-gradient(rgba(15,39,71,0.85),rgba(15,39,71,0.85)),
 url("https://images.unsplash.com/photo-1581091012184-49dd9f81f0ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080");
 background-size:cover;
 background-position:center;
+color:white;
 height:85vh;
 display:flex;
 flex-direction:column;
@@ -58,18 +58,17 @@ margin:0;
 }
 
 .hero span{
-color:#25D366;
+color:#ff7a00;
 }
 
 .hero p{
 font-size:18px;
 margin-top:15px;
-color:#ccc;
 }
 
 .btn{
-background:#25D366;
-color:black;
+background:#ff7a00;
+color:white;
 padding:12px 28px;
 border:none;
 margin-top:20px;
@@ -78,66 +77,97 @@ text-decoration:none;
 display:inline-block;
 font-weight:bold;
 border-radius:6px;
-box-shadow:0 0 15px #25D366;
-transition:0.3s;
 }
 
-.btn:hover{
-transform:scale(1.05);
+/* ORDER ROW */
+.order-row{
+display:flex;
+align-items:center;
+gap:40px;
+margin-top:25px;
+flex-wrap:wrap;
 }
 
-/* MATERIAL SECTION */
+.icon-3d{
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+font-size:26px;
+text-decoration:none;
+box-shadow:0 6px 0 rgba(0,0,0,0.3), 0 10px 20px rgba(0,0,0,0.4);
+transition:0.2s;
+}
+
+.icon-3d:hover{
+transform:translateY(4px);
+box-shadow:0 2px 0 rgba(0,0,0,0.3);
+}
+
+.whatsapp-bg{ background:#25D366; }
+.call-bg{ background:#ff7a00; }
+
+.action-box{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.action-text{
+font-size:20px;
+font-weight:bold;
+color:white;
+}
+
+/* MATERIAL LIST */
 .materials{
-padding:80px 8%;
+padding:70px 8%;
 text-align:center;
-background:#0f1b2d;
+background:#ffffff;
 }
 
 .materials h2{
-font-size:32px;
-margin-bottom:60px;
-color:#25D366;
+font-size:30px;
+margin-bottom:50px;
+color:#0f2747;
 }
 
 .material-grid{
 display:grid;
 grid-template-columns:repeat(3,1fr);
-gap:50px;
+gap:40px;
 }
 
-/* 3D GLOW BOX */
+/* PROFESSIONAL 3D BOX */
 .material-item{
-padding:40px;
-border-radius:18px;
-background:#131f33;
-box-shadow:0 0 20px rgba(37,211,102,0.2);
-transition:0.4s;
-animation:float 4s ease-in-out infinite;
+padding:35px;
+border-radius:15px;
+background:linear-gradient(145deg,#ffffff,#dfe6ee);
+box-shadow:8px 8px 20px rgba(0,0,0,0.15),
+-8px -8px 20px rgba(255,255,255,0.9);
+transition:0.3s;
 }
 
 .material-item:hover{
-transform:translateY(-12px) scale(1.05);
-box-shadow:0 0 35px rgba(37,211,102,0.6);
+transform:translateY(-8px);
+box-shadow:12px 12px 25px rgba(0,0,0,0.2),
+-6px -6px 20px rgba(255,255,255,1);
 }
 
 .material-name{
-font-size:30px;
+font-size:28px;
 font-weight:bold;
-color:white;
+color:#0f2747;
 }
 
 .material-price{
-margin-top:12px;
-font-size:22px;
+margin-top:10px;
+font-size:20px;
 color:#25D366;
 font-weight:bold;
-}
-
-/* FLOAT ANIMATION */
-@keyframes float{
-0%{transform:translateY(0px);}
-50%{transform:translateY(-8px);}
-100%{transform:translateY(0px);}
 }
 
 /* RESPONSIVE */
@@ -155,25 +185,52 @@ grid-template-columns:1fr;
 
 /* CONTACT */
 .contact{
-background:#111c2e;
+background:#0f2747;
+color:white;
 text-align:center;
-padding:70px 8%;
+padding:60px 8%;
 }
 
 iframe{
-border-radius:15px;
+border-radius:12px;
 width:100%;
 height:350px;
 border:0;
 margin-top:20px;
 }
 
+.features{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:40px;
+margin-top:40px;
+text-align:center;
+}
+
+.feature-box{
+width:170px;
+}
+
+.feature-box i{
+font-size:45px;
+color:white;
+margin-bottom:10px;
+}
+
+.feature-box h3{
+font-size:16px;
+margin:0;
+color:white;
+}
+
+/* FOOTER */
 footer{
-background:#0b1423;
+background:#081a30;
+color:white;
 text-align:center;
 padding:20px;
 font-size:14px;
-color:#aaa;
 }
 </style>
 </head>
@@ -191,14 +248,31 @@ color:#aaa;
 <section class="hero">
 <h1>Shree Ramesh <span>Construction Material</span></h1>
 <p>Premium Quality Construction Materials in Gorakhpur.</p>
+
 <a href="tel:9792246824" class="btn">Get Best Price</a>
+
+<div class="order-row">
+<div class="action-box">
+<a href="https://wa.me/919792246824" class="icon-3d whatsapp-bg">
+<i class="fab fa-whatsapp"></i>
+</a>
+<div class="action-text">Order Now</div>
+</div>
+
+<div class="action-box">
+<a href="tel:9792246824" class="icon-3d call-bg">
+<i class="fas fa-phone"></i>
+</a>
+<div class="action-text">Call Now</div>
+</div>
+</div>
 </section>
 
+<!-- MATERIAL SECTION -->
 <section class="materials">
 <h2>Available Materials</h2>
 
 <div class="material-grid">
-
 <div class="material-item">
 <div class="material-name">सीमेंट</div>
 <div class="material-price">₹380 / Bag</div>
@@ -218,7 +292,6 @@ color:#aaa;
 <div class="material-name">गिट्टी</div>
 <div class="material-price">₹65 / CFT</div>
 </div>
-
 </div>
 </section>
 
@@ -231,6 +304,28 @@ color:#aaa;
 src="https://www.google.com/maps?q=Raji%20Akala%20No.1%2C%20Gulhariya%20Medical%20College%20Road%2C%20Gorakhpur&output=embed"
 loading="lazy">
 </iframe>
+
+<div class="features">
+<div class="feature-box">
+<i class="fas fa-award"></i>
+<h3>15+ Years Experience</h3>
+</div>
+
+<div class="feature-box">
+<i class="fas fa-shield-halved"></i>
+<h3>Trusted Seller</h3>
+</div>
+
+<div class="feature-box">
+<i class="fas fa-check-circle"></i>
+<h3>Quality Checked</h3>
+</div>
+
+<div class="feature-box">
+<i class="fas fa-truck-fast"></i>
+<h3>Fast Delivery</h3>
+</div>
+</div>
 </section>
 
 <footer>
@@ -238,4 +333,4 @@ loading="lazy">
 </footer>
 
 </body>
-  </html>
+                          </html>
