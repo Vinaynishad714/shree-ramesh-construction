@@ -1,143 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shree Ramesh Construction Material</title>
+  <title>Vinay Building Materials</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      text-align: center;
+    }
 
-<script src="https://cdn.tailwindcss.com"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    header {
+      background: linear-gradient(45deg, #0f2027, #203a43, #2c5364);
+      color: white;
+      padding: 40px 20px;
+    }
 
-<script>
-tailwind.config = {
-theme: {
-extend: {
-colors: {
-brand: '#f97316',
-primary: '#0f172a',
-lightbg: '#f3f4f6'
-}
-}
-}
-}
-</script>
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
 
-<style>
-body { font-family: Arial, sans-serif; }
-.hero-bg { background: linear-gradient(135deg,#0f172a,#1e3a8a); }
-</style>
+    header p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    .products {
+      padding: 30px;
+    }
+
+    .product {
+      background: white;
+      margin: 15px auto;
+      padding: 20px;
+      width: 90%;
+      max-width: 400px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .product h3 {
+      margin: 0;
+      color: #2c5364;
+    }
+
+    .price {
+      font-size: 20px;
+      color: green;
+      margin-top: 10px;
+    }
+
+    .contact {
+      background: #203a43;
+      color: white;
+      padding: 20px;
+    }
+
+    .whatsapp {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: green;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    footer {
+      padding: 10px;
+      background: #111;
+      color: white;
+      font-size: 14px;
+    }
+  </style>
 </head>
 
-<body class="bg-lightbg">
+<body>
 
-<!-- Navbar -->
-<nav class="bg-primary text-white p-4 flex justify-between">
-<h1 class="font-bold text-xl">Shree Ramesh</h1>
-<a href="#admin" class="text-sm underline">Admin</a>
-</nav>
+<header>
+  <h1>Vinay Building Materials</h1>
+  <p>Quality Construction Materials at Best Price</p>
+  <p><b>Location:</b> Raji Akla No.1, Post Gulhariya Bazar, Gorakhpur</p>
+</header>
 
-<!-- Hero -->
-<section class="hero-bg text-white text-center py-20">
-<h2 class="text-4xl font-bold">Today's Price List</h2>
+<section class="products">
+  <div class="product">
+    <h3>Sariya</h3>
+    <p class="price">₹ 60 / kg</p>
+  </div>
+
+  <div class="product">
+    <h3>Cement</h3>
+    <p class="price">₹ 380 / bag</p>
+  </div>
+
+  <div class="product">
+    <h3>Balu</h3>
+    <p class="price">₹ 45 / cubic ft</p>
+  </div>
+
+  <div class="product">
+    <h3>Gitti</h3>
+    <p class="price">₹ 55 / cubic ft</p>
+  </div>
 </section>
 
-<!-- Price Table -->
-<section class="py-10 container mx-auto px-6">
-<table class="w-full bg-white shadow rounded">
-<thead class="bg-primary text-white">
-<tr>
-<th class="p-3">Material</th>
-<th class="p-3">Price</th>
-</tr>
-</thead>
-<tbody>
-<tr class="border">
-<td class="p-3 font-bold">Cement</td>
-<td class="p-3" id="cementPrice">₹400</td>
-</tr>
-<tr class="border">
-<td class="p-3 font-bold">TMT Sariya</td>
-<td class="p-3" id="steelPrice">₹55/kg</td>
-</tr>
-</tbody>
-</table>
+<section class="contact">
+  <h2>Contact Us</h2>
+  <p>Call Now: +91 XXXXXXXXXX</p>
+  <a class="whatsapp" href="https://wa.me/91XXXXXXXXXX">WhatsApp Now</a>
 </section>
 
-<!-- Admin Panel -->
-<section id="admin" class="py-20 bg-white">
-<div class="container mx-auto px-6 max-w-md">
-
-<h2 class="text-2xl font-bold mb-6">Admin Panel</h2>
-
-<div id="loginSection">
-<input type="password" id="adminPass" placeholder="Enter Password"
-class="w-full border p-3 mb-4">
-<button onclick="login()"
-class="bg-brand text-white w-full p-3 rounded">
-Login
-</button>
-</div>
-
-<div id="adminSection" class="hidden">
-<label class="block mb-2">Cement Price</label>
-<input type="text" id="editCement"
-class="w-full border p-2 mb-4">
-
-<label class="block mb-2">Steel Price</label>
-<input type="text" id="editSteel"
-class="w-full border p-2 mb-4">
-
-<button onclick="savePrices()"
-class="bg-primary text-white w-full p-3 rounded">
-Save Changes
-</button>
-</div>
-
-</div>
-</section>
-
-<script>
-// Load saved prices
-window.onload = function() {
-if(localStorage.getItem("cement")){
-document.getElementById("cementPrice").innerText = localStorage.getItem("cement");
-}
-if(localStorage.getItem("steel")){
-document.getElementById("steelPrice").innerText = localStorage.getItem("steel");
-}
-}
-
-// Login function
-function login(){
-let pass = document.getElementById("adminPass").value;
-if(pass === "1234"){   // 🔐 Change this password
-document.getElementById("loginSection").classList.add("hidden");
-document.getElementById("adminSection").classList.remove("hidden");
-
-document.getElementById("editCement").value =
-document.getElementById("cementPrice").innerText;
-
-document.getElementById("editSteel").value =
-document.getElementById("steelPrice").innerText;
-}else{
-alert("Wrong Password");
-}
-}
-
-// Save prices
-function savePrices(){
-let cement = document.getElementById("editCement").value;
-let steel = document.getElementById("editSteel").value;
-
-localStorage.setItem("cement", cement);
-localStorage.setItem("steel", steel);
-
-document.getElementById("cementPrice").innerText = cement;
-document.getElementById("steelPrice").innerText = steel;
-
-alert("Prices Updated Successfully ✅");
-}
-</script>
+<footer>
+  © 2026 Vinay Building Materials | All Rights Reserved
+</footer>
 
 </body>
-  </html>
+</html>
