@@ -11,32 +11,40 @@
 body{
 margin:0;
 font-family:Arial, sans-serif;
-background:#0b1423;
-color:white;
+background:#eef2f7;
 }
 
 /* HEADER */
 header{
-background:#111c2e;
+background:#0f2747;
+color:white;
 padding:15px 6%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-box-shadow:0 4px 15px rgba(0,0,0,0.6);
+flex-wrap:wrap;
 }
 
 .logo{
 font-size:22px;
 font-weight:bold;
-color:#25D366;
+color:#ff7a00;
+}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-size:14px;
 }
 
 /* HERO */
 .hero{
-background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+background:linear-gradient(rgba(15,39,71,0.85),rgba(15,39,71,0.85)),
 url("https://images.unsplash.com/photo-1581091012184-49dd9f81f0ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080");
 background-size:cover;
 background-position:center;
+color:white;
 height:85vh;
 display:flex;
 flex-direction:column;
@@ -44,64 +52,131 @@ justify-content:center;
 padding:0 8%;
 }
 
-.hero h1 span{
-color:#25D366;
+.hero h1{
+font-size:42px;
+margin:0;
 }
 
-/* MATERIAL SECTION */
+.hero span{
+color:#ff7a00;
+}
+
+.hero p{
+font-size:18px;
+margin-top:15px;
+}
+
+.btn{
+background:#ff7a00;
+color:white;
+padding:12px 28px;
+border:none;
+margin-top:20px;
+cursor:pointer;
+text-decoration:none;
+display:inline-block;
+font-weight:bold;
+border-radius:6px;
+}
+
+/* ORDER ROW */
+.order-row{
+display:flex;
+align-items:center;
+gap:40px;
+margin-top:25px;
+flex-wrap:wrap;
+}
+
+.icon-3d{
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+font-size:26px;
+text-decoration:none;
+box-shadow:0 6px 0 rgba(0,0,0,0.3), 0 10px 20px rgba(0,0,0,0.4);
+transition:0.2s;
+}
+
+.icon-3d:hover{
+transform:translateY(4px);
+box-shadow:0 2px 0 rgba(0,0,0,0.3);
+}
+
+.whatsapp-bg{ background:#25D366; }
+.call-bg{ background:#ff7a00; }
+
+.action-box{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.action-text{
+font-size:20px;
+font-weight:bold;
+color:white;
+}
+
+/* MATERIAL LIST */
 .materials{
-padding:80px 8%;
+padding:70px 8%;
 text-align:center;
-background:#0f1b2d;
+background:#ffffff;
 }
 
 .materials h2{
-font-size:32px;
-margin-bottom:60px;
-color:#25D366;
+font-size:30px;
+margin-bottom:50px;
+color:#0f2747;
 }
 
 .material-grid{
 display:grid;
 grid-template-columns:repeat(3,1fr);
-gap:50px;
+gap:40px;
 }
 
-/* 3D BOX */
+/* PROFESSIONAL 3D BOX */
 .material-item{
-padding:40px;
-border-radius:18px;
-background:#131f33;
-box-shadow:0 10px 20px rgba(0,0,0,0.5);
-transition:0.4s;
+padding:35px;
+border-radius:15px;
+background:linear-gradient(145deg,#ffffff,#dfe6ee);
+box-shadow:8px 8px 20px rgba(0,0,0,0.15),
+-8px -8px 20px rgba(255,255,255,0.9);
+transition:0.3s;
 position:relative;
 cursor:pointer;
 }
 
-/* HOVER LIFT */
 .material-item:hover{
 transform:translateY(-8px);
+box-shadow:12px 12px 25px rgba(0,0,0,0.2),
+-6px -6px 20px rgba(255,255,255,1);
 }
 
-/* TAP / CLICK GLOW EFFECT */
+/* TAP GLOW EFFECT (Website Blue) */
 .material-item:active{
 transform:translateY(4px);
-box-shadow:0 15px 35px rgba(37,211,102,0.8),
-0 0 25px rgba(37,211,102,0.7);
+box-shadow:0 20px 40px rgba(15,39,71,0.6);
 }
 
-/* BOTTOM GLOW LINE */
+/* BOTTOM GLOW */
 .material-item::after{
 content:"";
 position:absolute;
-left:10%;
-bottom:-10px;
-width:80%;
-height:10px;
-background:rgba(37,211,102,0.6);
-filter:blur(15px);
+left:15%;
+bottom:-14px;
+width:70%;
+height:14px;
+background:rgba(15,39,71,0.6);
+filter:blur(20px);
 opacity:0;
-transition:0.4s;
+transition:0.3s;
 border-radius:50%;
 }
 
@@ -110,13 +185,14 @@ opacity:1;
 }
 
 .material-name{
-font-size:30px;
+font-size:28px;
 font-weight:bold;
+color:#0f2747;
 }
 
 .material-price{
-margin-top:12px;
-font-size:22px;
+margin-top:10px;
+font-size:20px;
 color:#25D366;
 font-weight:bold;
 }
@@ -134,11 +210,54 @@ grid-template-columns:1fr;
 }
 }
 
+/* CONTACT */
+.contact{
+background:#0f2747;
+color:white;
+text-align:center;
+padding:60px 8%;
+}
+
+iframe{
+border-radius:12px;
+width:100%;
+height:350px;
+border:0;
+margin-top:20px;
+}
+
+.features{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:40px;
+margin-top:40px;
+text-align:center;
+}
+
+.feature-box{
+width:170px;
+}
+
+.feature-box i{
+font-size:45px;
+color:white;
+margin-bottom:10px;
+}
+
+.feature-box h3{
+font-size:16px;
+margin:0;
+color:white;
+}
+
+/* FOOTER */
 footer{
-background:#0b1423;
+background:#081a30;
+color:white;
 text-align:center;
 padding:20px;
-color:#aaa;
+font-size:14px;
 }
 </style>
 </head>
@@ -147,17 +266,39 @@ color:#aaa;
 
 <header>
 <div class="logo">Shree Ramesh Construction Material</div>
+<nav>
+<a href="#">Home</a>
+<a href="#contact">Contact</a>
+</nav>
 </header>
 
 <section class="hero">
 <h1>Shree Ramesh <span>Construction Material</span></h1>
+<p>Premium Quality Construction Materials in Gorakhpur.</p>
+
+<a href="tel:9792246824" class="btn">Get Best Price</a>
+
+<div class="order-row">
+<div class="action-box">
+<a href="https://wa.me/919792246824" class="icon-3d whatsapp-bg">
+<i class="fab fa-whatsapp"></i>
+</a>
+<div class="action-text">Order Now</div>
+</div>
+
+<div class="action-box">
+<a href="tel:9792246824" class="icon-3d call-bg">
+<i class="fas fa-phone"></i>
+</a>
+<div class="action-text">Call Now</div>
+</div>
+</div>
 </section>
 
 <section class="materials">
 <h2>Available Materials</h2>
 
 <div class="material-grid">
-
 <div class="material-item">
 <div class="material-name">सीमेंट</div>
 <div class="material-price">₹380 / Bag</div>
@@ -177,13 +318,23 @@ color:#aaa;
 <div class="material-name">गिट्टी</div>
 <div class="material-price">₹65 / CFT</div>
 </div>
-
 </div>
 </section>
 
+<section id="contact" class="contact">
+<h2>Contact Us</h2>
+<p>📍 Raji Akala No.1, Gulhariya Medical College Road, Gorakhpur</p>
+<p>📞 9792246824 | 8400879638</p>
+
+<iframe 
+src="https://www.google.com/maps?q=Raji%20Akala%20No.1%2C%20Gulhariya%20Medical%20College%20Road%2C%20Gorakhpur&output=embed"
+loading="lazy">
+</iframe>
+</section>
+
 <footer>
-© 2026 Shree Ramesh Construction Material
+© 2026 Shree Ramesh Construction Material | All Rights Reserved
 </footer>
 
 </body>
-</html>
+  </html>
