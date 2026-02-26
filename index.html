@@ -107,12 +107,10 @@ transform:translateY(4px);
 box-shadow:0 2px 0 rgba(0,0,0,0.3);
 }
 
-/* WhatsApp Color */
 .whatsapp-bg{
 background:#25D366;
 }
 
-/* Call Color */
 .call-bg{
 background:#ff7a00;
 }
@@ -127,6 +125,46 @@ gap:15px;
 font-size:20px;
 font-weight:bold;
 color:white;
+}
+
+/* MATERIAL LIST */
+.materials{
+padding:60px 8%;
+text-align:center;
+background:#ffffff;
+}
+
+.materials h2{
+font-size:28px;
+margin-bottom:40px;
+color:#0f2747;
+}
+
+.material-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+
+.material-item{
+font-size:26px;
+font-weight:bold;
+padding:30px;
+background:#f5f7fa;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+@media(max-width:768px){
+.material-grid{
+grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media(max-width:480px){
+.material-grid{
+grid-template-columns:1fr;
+}
 }
 
 /* CONTACT */
@@ -145,7 +183,6 @@ border:0;
 margin-top:20px;
 }
 
-/* FEATURES */
 .features{
 display:flex;
 justify-content:center;
@@ -192,7 +229,6 @@ font-size:14px;
 </nav>
 </header>
 
-<!-- HERO -->
 <section class="hero">
 <h1>Shree Ramesh <span>Construction Material</span></h1>
 <p>Premium Quality Construction Materials in Gorakhpur.</p>
@@ -201,7 +237,6 @@ font-size:14px;
 
 <div class="order-row">
 
-<!-- WhatsApp -->
 <div class="action-box">
 <a href="https://wa.me/919792246824" class="icon-3d whatsapp-bg">
 <i class="fab fa-whatsapp"></i>
@@ -209,7 +244,6 @@ font-size:14px;
 <div class="action-text">Order Now</div>
 </div>
 
-<!-- Call -->
 <div class="action-box">
 <a href="tel:9792246824" class="icon-3d call-bg">
 <i class="fas fa-phone"></i>
@@ -218,10 +252,19 @@ font-size:14px;
 </div>
 
 </div>
-
 </section>
 
-<!-- CONTACT -->
+<!-- MATERIAL LIST -->
+<section class="materials">
+<h2>Available Materials</h2>
+<div class="material-grid">
+<div class="material-item">सीमेंट</div>
+<div class="material-item">सरिया</div>
+<div class="material-item">बालू</div>
+<div class="material-item">गिट्टी</div>
+</div>
+</section>
+
 <section id="contact" class="contact">
 <h2>Contact Us</h2>
 <p>📍 Raji Akala No.1, Gulhariya Medical College Road, Gorakhpur</p>
@@ -255,7 +298,6 @@ loading="lazy">
 </div>
 
 </div>
-
 </section>
 
 <footer>
@@ -263,4 +305,4 @@ loading="lazy">
 </footer>
 
 </body>
-</html>
+  </html>
