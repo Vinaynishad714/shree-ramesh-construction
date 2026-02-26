@@ -7,168 +7,206 @@
 <meta name="description" content="Shree Ramesh Construction Material - Best construction material supplier in Gorakhpur. Cement, TMT Sariya, Gitti & Balu available at best rates.">
 
 <style>
+/* BODY + BACKGROUND */
 body{
-margin:0;
-font-family:Arial, sans-serif;
-background:#f5f7fa;
+  margin:0;
+  font-family:Arial, sans-serif;
+  background: #f5f7fa url('https://images.unsplash.com/photo-1581090700227-2f1b5d7485e2?auto=format&fit=crop&w=1600&q=80') repeat;
+  background-size: cover;
+  background-attachment: fixed; /* background fixed while scrolling */
+  overflow-x:hidden;
 }
 
 /* HEADER */
 header{
-background:#0f2747;
-color:white;
-padding:15px 6%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-flex-wrap:wrap;
+  background:#0f2747;
+  color:white;
+  padding:15px 6%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  z-index:100;
+  position:relative;
 }
 
 .logo{
-font-size:22px;
-font-weight:bold;
-color:#ff7a00;
+  font-size:22px;
+  font-weight:bold;
+  color:#ff7a00;
 }
 
 nav a{
-color:white;
-margin-left:20px;
-text-decoration:none;
-font-size:14px;
+  color:white;
+  margin-left:20px;
+  text-decoration:none;
+  font-size:14px;
 }
 
 /* HERO */
 .hero{
-background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('hero-bg.jpg');
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-height: 85vh;
-display: flex;
-flex-direction: column;
-justify-content: center;
-padding: 0 8%;
-color: white;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 8%;
+  color: white;
+  position: relative;
+  overflow: hidden;
 }
 
 .hero h1{
-font-size:48px;
-margin:0;
+  font-size:48px;
+  margin:0;
+  opacity:0;
+  transform: translateY(30px);
+  animation: slideFade 1.2s forwards;
 }
 
 .hero span{
-color:#ff7a00;
+  color:#ff7a00;
 }
 
 .hero p{
-font-size:18px;
-margin-top:15px;
-max-width:600px;
+  font-size:18px;
+  margin-top:15px;
+  max-width:600px;
+  opacity:0;
+  transform: translateY(30px);
+  animation: slideFade 1.5s forwards;
+  animation-delay:0.3s;
 }
 
 .btn{
-background:#ff7a00;
-color:white;
-padding:12px 28px;
-border:none;
-margin-top:20px;
-cursor:pointer;
-text-decoration:none;
-display:inline-block;
-font-weight:bold;
+  background:#ff7a00;
+  color:white;
+  padding:12px 28px;
+  border:none;
+  margin-top:20px;
+  cursor:pointer;
+  text-decoration:none;
+  display:inline-block;
+  font-weight:bold;
+  opacity:0;
+  transform: translateY(30px);
+  animation: slideFade 1.8s forwards;
+  animation-delay:0.6s;
+  transition:0.3s;
 }
 
-/* SECTION */
+.btn:hover{
+  background:#e06600;
+}
+
+/* Hero text animation */
+@keyframes slideFade {
+  to{
+    opacity:1;
+    transform: translateY(0);
+  }
+}
+
+/* SECTIONS */
 .section{
-padding:70px 8%;
-text-align:center;
+  padding:70px 8%;
+  text-align:center;
+  background: rgba(255,255,255,0.95);
+  border-radius:12px;
+  margin-bottom:30px;
 }
 
 .section h2{
-font-size:32px;
-margin-bottom:40px;
-color:#0f2747;
+  font-size:32px;
+  margin-bottom:40px;
+  color:#0f2747;
 }
 
 .grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
 }
 
 .card{
-background:white;
-border-radius:12px;
-overflow:hidden;
-box-shadow:0 8px 20px rgba(0,0,0,0.1);
-transition:0.3s;
+  background:white;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 8px 20px rgba(0,0,0,0.1);
+  transition:0.3s;
 }
 
 .card:hover{
-transform:translateY(-8px);
+  transform:translateY(-8px);
+  box-shadow:0 12px 25px rgba(0,0,0,0.2);
 }
 
 .card img{
-width:100%;
-height:220px;
-object-fit:cover;
+  width:100%;
+  height:220px;
+  object-fit:cover;
 }
 
 .card-content{
-padding:18px;
-text-align:left;
+  padding:18px;
+  text-align:left;
 }
 
 .price{
-color:#ff7a00;
-font-weight:bold;
-font-size:16px;
-margin-top:8px;
+  color:#ff7a00;
+  font-weight:bold;
+  font-size:16px;
+  margin-top:8px;
 }
 
 /* CONTACT */
 .contact{
-background:#0f2747;
-color:white;
-text-align:center;
-padding:60px 8%;
+  background: rgba(15,39,71,0.95);
+  color:white;
+  text-align:center;
+  padding:60px 8%;
+  border-radius:12px;
 }
 
 .contact h2{
-color:#ff7a00;
+  color:#ff7a00;
 }
 
 /* FOOTER */
 footer{
-background:#081a30;
-color:white;
-text-align:center;
-padding:20px;
-font-size:14px;
+  background:#081a30;
+  color:white;
+  text-align:center;
+  padding:20px;
+  font-size:14px;
+  border-radius:12px 12px 0 0;
 }
 
 /* FLOAT BUTTONS */
 .whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px;
-border-radius:50%;
-text-decoration:none;
-font-size:18px;
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:white;
+  padding:15px;
+  border-radius:50%;
+  text-decoration:none;
+  font-size:18px;
 }
 
 .call{
-position:fixed;
-bottom:80px;
-right:20px;
-background:#ff7a00;
-color:white;
-padding:15px;
-border-radius:50%;
-text-decoration:none;
+  position:fixed;
+  bottom:80px;
+  right:20px;
+  background:#ff7a00;
+  color:white;
+  padding:15px;
+  border-radius:50%;
+  text-decoration:none;
 }
 </style>
 </head>
@@ -185,7 +223,7 @@ text-decoration:none;
 </header>
 
 <!-- HERO SECTION -->
-<section class="hero">
+<section class="hero" id="hero">
 <h1>Shree Ramesh <span>Construction Material</span></h1>
 <p>Premium Quality Construction Materials in Gorakhpur. Best brands at best rates.</p>
 <a href="tel:9792246824" class="btn">Get Best Price</a>
@@ -197,16 +235,12 @@ text-decoration:none;
 
 <div class="grid">
 
-<!-- COMBINED CEMENT CARD -->
+<!-- CEMENT CARD -->
 <div class="card">
   <img src="https://images.unsplash.com/photo-1575456074261-7ce4078b76b7" alt="Cement Bags">
   <div class="card-content">
     <h3>Cement</h3>
-    <p class="price">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Ultratech_Cement_logo.svg" alt="Ultratech" style="height:20px; vertical-align:middle;"> Ultratech: ₹350 / Bag<br>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ACC_Cement_Logo.svg" alt="ACC" style="height:20px; vertical-align:middle;"> ACC: ₹345 / Bag<br>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Ambuja_Cement_Logo.svg" alt="Ambuja" style="height:20px; vertical-align:middle;"> Ambuja: ₹340 / Bag
-    </p>
+    <p class="price">₹350 / Bag</p>
   </div>
 </div>
 
@@ -268,5 +302,14 @@ loading="lazy">
 <a class="whatsapp" href="https://wa.me/919792246824">W</a>
 <a class="call" href="tel:9792246824">📞</a>
 
+<script>
+// Subtle parallax effect for hero background
+window.addEventListener('scroll', function() {
+    const hero = document.getElementById('hero');
+    let offset = window.pageYOffset;
+    hero.style.backgroundPositionY = offset * 0.5 + "px";
+});
+</script>
+
 </body>
-  </html>
+</html>
