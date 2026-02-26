@@ -114,11 +114,48 @@ padding:60px 8%;
 color:#ff7a00;
 }
 
-.trust{
-margin-top:30px;
-font-size:18px;
-color:#ffd700;
-line-height:1.8;
+/* LIVE MAP */
+iframe{
+border-radius:12px;
+width:100%;
+height:350px;
+border:0;
+margin-top:20px;
+}
+
+/* TRUST BOXES */
+.trust-container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+margin-top:40px;
+gap:25px;
+}
+
+.trust-item{
+background:#ffd700;
+color:#0f2747;
+border-radius:50%;
+width:160px;
+height:160px;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+text-align:center;
+font-weight:bold;
+padding:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+transition:0.3s;
+}
+
+.trust-item:hover{
+transform:scale(1.1);
+}
+
+.trust-item span.icon{
+font-size:28px;
+margin-bottom:10px;
 }
 
 /* FOOTER */
@@ -193,24 +230,19 @@ text-decoration:none;
 <p>📞 9792246824 | 8400879638</p>
 <a href="tel:9792246824" class="btn">Call Now</a>
 
-<br><br>
-
 <!-- LIVE GOOGLE MAP -->
 <iframe 
 src="https://www.google.com/maps?q=Raji%20Akala%20No.1%2C%20Gulhariya%20Medical%20College%20Road%2C%20Gorakhpur&output=embed"
-width="100%" 
-height="350" 
-style="border:0; border-radius:12px;" 
 allowfullscreen="" 
 loading="lazy">
 </iframe>
 
-<!-- TRUST LINES -->
-<div class="trust">
-<p>✅ 15 Years Trusted Material Supplier</p>
-<p>✅ Expert Dhalai Experience</p>
-<p>✅ Quality Checked Materials for Every Project</p>
-<p>✅ Timely Delivery & Contractor Friendly Rates</p>
+<!-- TRUST BOXES -->
+<div class="trust-container">
+<div class="trust-item"><span class="icon">✅</span>15 Years Trusted Supplier</div>
+<div class="trust-item"><span class="icon">⚒️</span>Expert Dhalai Experience</div>
+<div class="trust-item"><span class="icon">✔️</span>Quality Checked Materials</div>
+<div class="trust-item"><span class="icon">⏱️</span>Timely Delivery & Contractor Rates</div>
 </div>
 
 </section>
