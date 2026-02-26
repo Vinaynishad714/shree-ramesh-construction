@@ -1,29 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Shree Ramesh Construction Material</title>
 
-<meta name="description" content="Shree Ramesh Construction Material - Cement, Sariya, Gitti, Balua supplier in Gorkhpur. Best price and fast delivery.">
-<meta name="keywords" content="Cement dealer Gorkhpur, Sariya price today, Gitti supplier near me, Construction material GIDA">
-
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<style>
-body { font-family: 'Poppins', sans-serif; }
-
-.hero-bg {
-background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
-}
-
-.product-card:hover {
-transform: translateY(-10px);
-box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-</style>
 
 <script>
 tailwind.config = {
@@ -32,170 +15,129 @@ extend: {
 colors: {
 brand: '#f97316',
 primary: '#0f172a',
-secondary: '#1e3a8a',
 lightbg: '#f3f4f6'
 }
 }
 }
 }
 </script>
+
+<style>
+body { font-family: Arial, sans-serif; }
+.hero-bg { background: linear-gradient(135deg,#0f172a,#1e3a8a); }
+</style>
 </head>
 
-<body class="bg-lightbg text-gray-800">
+<body class="bg-lightbg">
 
 <!-- Navbar -->
-<nav class="bg-primary text-white fixed w-full z-50 shadow-lg">
-<div class="container mx-auto px-6 py-4 flex justify-between items-center">
-<div class="text-2xl font-bold flex items-center gap-2">
-<i class="fa-solid fa-layer-group text-brand"></i> Shree Ramesh
-</div>
-
-<div class="hidden md:flex space-x-8">
-<a href="#home" class="hover:text-brand">Home</a>
-<a href="#products" class="hover:text-brand">Products</a>
-<a href="#pricelist" class="hover:text-brand">Price List</a>
-<a href="#contact" class="hover:text-brand">Contact</a>
-</div>
-
-<button class="md:hidden text-2xl"
-onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
-<i class="fa-solid fa-bars"></i>
-</button>
-</div>
-
-<div id="mobile-menu" class="hidden md:hidden bg-primary p-4 space-y-4">
-<a href="#home" class="block hover:text-brand">Home</a>
-<a href="#products" class="block hover:text-brand">Products</a>
-<a href="#pricelist" class="block hover:text-brand">Price List</a>
-<a href="#contact" class="block hover:text-brand">Contact</a>
-</div>
+<nav class="bg-primary text-white p-4 flex justify-between">
+<h1 class="font-bold text-xl">Shree Ramesh</h1>
+<a href="#admin" class="text-sm underline">Admin</a>
 </nav>
 
 <!-- Hero -->
-<section id="home" class="hero-bg h-screen flex items-center justify-center text-center px-4">
-<div class="text-white max-w-3xl">
-<h1 class="text-5xl md:text-7xl font-bold mb-6">
-Build Your Dream With <span class="text-brand">Strength</span>
-</h1>
-<p class="text-xl mb-8 text-gray-200">
-Premium Cement, Steel, Gitti & Sand Supplier in Gorkhpur
-</p>
-<div class="flex flex-col md:flex-row gap-4 justify-center">
-<a href="#products"
-class="bg-brand text-white font-bold py-3 px-8 rounded-full hover:scale-105 transition">
-View Products
-</a>
-<a href="#contact"
-class="bg-white text-primary font-bold py-3 px-8 rounded-full hover:scale-105 transition">
-Contact Now
-</a>
-</div>
-</div>
+<section class="hero-bg text-white text-center py-20">
+<h2 class="text-4xl font-bold">Today's Price List</h2>
 </section>
 
-<!-- Founder Section -->
-<section class="py-20 bg-white text-center">
-<div class="container mx-auto px-6">
-<h2 class="text-4xl font-bold mb-10">
-Meet Our <span class="text-brand">Founder</span>
-</h2>
-
-<img src="papa.jpg" alt="Founder"
-class="w-60 h-60 mx-auto rounded-full shadow-lg object-cover border-4 border-brand">
-
-<h3 class="text-2xl font-bold mt-6">Shri Ramesh Ji</h3>
-<p class="text-gray-600 mt-2">
-Founder & Owner - 10+ Years Experience in Construction Material Supply
-</p>
-</div>
-</section>
-
-<!-- Products -->
-<section id="products" class="py-20 container mx-auto px-6">
-<div class="text-center mb-16">
-<h2 class="text-4xl font-bold">
-Our <span class="text-brand">Products</span>
-</h2>
-</div>
-
-<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-
-<div class="bg-white rounded-xl shadow-md p-6 text-center product-card transition">
-<h3 class="text-xl font-bold mb-2">Premium Cement</h3>
-<p class="text-gray-500">ACC, Ambuja, Ultratech</p>
-</div>
-
-<div class="bg-white rounded-xl shadow-md p-6 text-center product-card transition">
-<h3 class="text-xl font-bold mb-2">TMT Sariya</h3>
-<p class="text-gray-500">Fe 500 / Fe 550</p>
-</div>
-
-<div class="bg-white rounded-xl shadow-md p-6 text-center product-card transition">
-<h3 class="text-xl font-bold mb-2">Gitti & Balua</h3>
-<p class="text-gray-500">20mm / 40mm</p>
-</div>
-
-<div class="bg-white rounded-xl shadow-md p-6 text-center product-card transition">
-<h3 class="text-xl font-bold mb-2">Fly Ash Bricks</h3>
-<p class="text-gray-500">All Sizes Available</p>
-</div>
-
-</div>
-</section>
-
-<!-- Price List -->
-<section id="pricelist" class="py-20 bg-white">
-<div class="container mx-auto px-6">
-<div class="overflow-x-auto bg-white rounded-lg shadow-lg">
-<table class="w-full text-left">
+<!-- Price Table -->
+<section class="py-10 container mx-auto px-6">
+<table class="w-full bg-white shadow rounded">
 <thead class="bg-primary text-white">
 <tr>
-<th class="p-4">Material</th>
-<th class="p-4">Brand</th>
-<th class="p-4">Price</th>
-<th class="p-4">Action</th>
+<th class="p-3">Material</th>
+<th class="p-3">Price</th>
 </tr>
 </thead>
 <tbody>
-<tr class="border-b hover:bg-orange-50">
-<td class="p-4 font-bold">Cement</td>
-<td class="p-4">Ultratech / ACC</td>
-<td class="p-4">₹350 - ₹480</td>
-<td class="p-4"><a href="tel:9792246824" class="text-brand font-bold">Call</a></td>
+<tr class="border">
+<td class="p-3 font-bold">Cement</td>
+<td class="p-3" id="cementPrice">₹400</td>
 </tr>
-<tr class="border-b hover:bg-orange-50">
-<td class="p-4 font-bold">TMT Sariya</td>
-<td class="p-4">Tata / SAIL</td>
-<td class="p-4">₹42 - ₹65/kg</td>
-<td class="p-4"><a href="tel:8400879638" class="text-brand font-bold">Call</a></td>
+<tr class="border">
+<td class="p-3 font-bold">TMT Sariya</td>
+<td class="p-3" id="steelPrice">₹55/kg</td>
 </tr>
 </tbody>
 </table>
+</section>
+
+<!-- Admin Panel -->
+<section id="admin" class="py-20 bg-white">
+<div class="container mx-auto px-6 max-w-md">
+
+<h2 class="text-2xl font-bold mb-6">Admin Panel</h2>
+
+<div id="loginSection">
+<input type="password" id="adminPass" placeholder="Enter Password"
+class="w-full border p-3 mb-4">
+<button onclick="login()"
+class="bg-brand text-white w-full p-3 rounded">
+Login
+</button>
 </div>
+
+<div id="adminSection" class="hidden">
+<label class="block mb-2">Cement Price</label>
+<input type="text" id="editCement"
+class="w-full border p-2 mb-4">
+
+<label class="block mb-2">Steel Price</label>
+<input type="text" id="editSteel"
+class="w-full border p-2 mb-4">
+
+<button onclick="savePrices()"
+class="bg-primary text-white w-full p-3 rounded">
+Save Changes
+</button>
+</div>
+
 </div>
 </section>
 
-<!-- Contact -->
-<section id="contact" class="py-20 bg-lightbg">
-<div class="container mx-auto px-6 grid md:grid-cols-2 gap-10">
-<div>
-<p><i class="fa-solid fa-phone text-brand mr-2"></i>9792246824</p>
-<p><i class="fa-solid fa-phone text-brand mr-2"></i>8400879638</p>
-<p><i class="fa-solid fa-location-dot text-brand mr-2"></i>Gulhariya Bazar, Gorkhpur</p>
-<p><i class="fa-solid fa-clock text-brand mr-2"></i>8 AM - 8 PM</p>
-</div>
-<div>
-<iframe src="https://www.google.com/maps?q=Gulhariya+Bazar+Gorakhpur&output=embed"
-class="w-full h-80 rounded-lg shadow-lg"></iframe>
-</div>
-</div>
-</section>
+<script>
+// Load saved prices
+window.onload = function() {
+if(localStorage.getItem("cement")){
+document.getElementById("cementPrice").innerText = localStorage.getItem("cement");
+}
+if(localStorage.getItem("steel")){
+document.getElementById("steelPrice").innerText = localStorage.getItem("steel");
+}
+}
 
-<!-- WhatsApp Button -->
-<a href="https://wa.me/919792246824" target="_blank"
-class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg text-2xl z-50">
-<i class="fa-brands fa-whatsapp"></i>
-</a>
+// Login function
+function login(){
+let pass = document.getElementById("adminPass").value;
+if(pass === "1234"){   // 🔐 Change this password
+document.getElementById("loginSection").classList.add("hidden");
+document.getElementById("adminSection").classList.remove("hidden");
+
+document.getElementById("editCement").value =
+document.getElementById("cementPrice").innerText;
+
+document.getElementById("editSteel").value =
+document.getElementById("steelPrice").innerText;
+}else{
+alert("Wrong Password");
+}
+}
+
+// Save prices
+function savePrices(){
+let cement = document.getElementById("editCement").value;
+let steel = document.getElementById("editSteel").value;
+
+localStorage.setItem("cement", cement);
+localStorage.setItem("steel", steel);
+
+document.getElementById("cementPrice").innerText = cement;
+document.getElementById("steelPrice").innerText = steel;
+
+alert("Prices Updated Successfully ✅");
+}
+</script>
 
 </body>
   </html>
