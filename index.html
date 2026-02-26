@@ -1,56 +1,198 @@
 <!DOCTYPE html>
-      text-decoration: none;
-      border-radius: 5px;
-    }
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vinay Building Materials</title>
 
-    footer {
-      padding: 10px;
-      background: #111;
-      color: white;
-      font-size: 14px;
-    }
-  </style>
+<style>
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#f4f4f4;
+}
+
+/* HERO */
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+flex-wrap:wrap;
+padding:60px 8%;
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+color:white;
+}
+
+.hero-text{
+max-width:500px;
+}
+
+.hero-text h1{
+font-size:42px;
+margin:0;
+}
+
+.hero-text p{
+margin-top:15px;
+font-size:18px;
+}
+
+.hero img{
+width:320px;
+border-radius:20px;
+box-shadow:0 15px 30px rgba(0,0,0,0.4);
+}
+
+/* PRODUCTS */
+.products{
+padding:60px 8%;
+text-align:center;
+}
+
+.products h2{
+font-size:32px;
+margin-bottom:40px;
+}
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.product{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 20px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.product:hover{
+transform:translateY(-10px);
+}
+
+.product h3{
+margin:0;
+font-size:22px;
+color:#203a43;
+}
+
+.price{
+font-size:24px;
+color:green;
+margin-top:15px;
+font-weight:bold;
+}
+
+.tag{
+margin-top:10px;
+display:inline-block;
+padding:5px 12px;
+background:orange;
+color:white;
+border-radius:20px;
+font-size:14px;
+}
+
+/* MAP */
+.map{
+padding:50px 8%;
+background:white;
+text-align:center;
+}
+
+iframe{
+width:100%;
+height:350px;
+border-radius:15px;
+}
+
+/* FOOTER */
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:green;
+color:white;
+padding:15px 18px;
+border-radius:50%;
+font-size:22px;
+text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+</style>
 </head>
 
 <body>
 
-<header>
-  <h1>Vinay Building Materials</h1>
-  <p>Quality Construction Materials at Best Price</p>
-  <p><b>Location:</b> Raji Akla No.1, Post Gulhariya Bazar, Gorakhpur</p>
-</header>
+<!-- HERO SECTION -->
+<section class="hero">
+<div class="hero-text">
+<h1>Vinay Building Materials</h1>
+<p>Strong Materials for Strong Construction</p>
+<p><b>Location:</b> Raji Akla No.1, Post Gulhariya Bazar, Gorakhpur</p>
+<p style="margin-top:15px;color:#ffd700;">
+✔ Contractor Special Rate Available  
+✔ Bulk Order Available
+</p>
+</div>
 
-<section class="products">
-  <div class="product">
-    <h3>Sariya</h3>
-    <p class="price">₹ 60 / kg</p>
-  </div>
-
-  <div class="product">
-    <h3>Cement</h3>
-    <p class="price">₹ 380 / bag</p>
-  </div>
-
-  <div class="product">
-    <h3>Balu</h3>
-    <p class="price">₹ 45 / cubic ft</p>
-  </div>
-
-  <div class="product">
-    <h3>Gitti</h3>
-    <p class="price">₹ 55 / cubic ft</p>
-  </div>
+<img src="papa.png" alt="Founder">
 </section>
 
-<section class="contact">
-  <h2>Contact Us</h2>
-  <p>Call Now: +91 XXXXXXXXXX</p>
-  <a class="whatsapp" href="https://wa.me/91XXXXXXXXXX">WhatsApp Now</a>
+<!-- PRODUCTS -->
+<section class="products">
+<h2>Today's Price List</h2>
+
+<div class="product-grid">
+
+<div class="product">
+<h3>Cement</h3>
+<div class="price">₹ 380 / bag</div>
+<span class="tag">Bulk Available</span>
+</div>
+
+<div class="product">
+<h3>TMT Sariya</h3>
+<div class="price">₹ 60 / kg</div>
+<span class="tag">Best Quality</span>
+</div>
+
+<div class="product">
+<h3>Gitti</h3>
+<div class="price">₹ 55 / cubic ft</div>
+<span class="tag">Fast Delivery</span>
+</div>
+
+<div class="product">
+<h3>Balua (Sand)</h3>
+<div class="price">₹ 45 / cubic ft</div>
+<span class="tag">Premium Grade</span>
+</div>
+
+</div>
+</section>
+
+<!-- GOOGLE MAP -->
+<section class="map">
+<h2>Our Location</h2>
+<iframe src="https://www.google.com/maps?q=Raji+Akla+No.1+Gulhariya+Bazar+Gorakhpur&output=embed"></iframe>
 </section>
 
 <footer>
-  © 2026 Vinay Building Materials | All Rights Reserved
+© 2026 Vinay Building Materials | All Rights Reserved
 </footer>
+
+<!-- WHATSAPP BUTTON -->
+<a class="whatsapp" href="https://wa.me/91XXXXXXXXXX" target="_blank">🟢</a>
 
 </body>
 </html>
