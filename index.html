@@ -1,225 +1,198 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shree Ramesh Construction Material</title>
+<title>Vinay Building Materials</title>
 
 <style>
-/* BODY + BACKGROUND */
 body{
-  margin:0;
-  font-family:Arial, sans-serif;
-  background: url('construction-bg.jpg') center/cover fixed no-repeat;
-  overflow-x:hidden;
-}
-
-/* HEADER */
-header{
-  background:#0f2747;
-  color:white;
-  padding:15px 6%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  flex-wrap:wrap;
-  z-index:100;
-  position:relative;
-}
-.logo{
-  font-size:22px;
-  font-weight:bold;
-  color:#ff7a00;
-}
-nav a{
-  color:white;
-  margin-left:20px;
-  text-decoration:none;
-  font-size:14px;
+margin:0;
+font-family:Arial, sans-serif;
+background:#f4f4f4;
 }
 
 /* HERO */
 .hero{
-  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('hero-bg.jpg') center/cover no-repeat;
-  height:85vh;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  padding:0 8%;
-  color:white;
-  text-align:left;
-}
-.hero h1{
-  font-size:48px;
-  margin:0;
-  opacity:0;
-  transform:translateY(30px);
-  animation:slideFade 1.2s forwards;
-}
-.hero span{ color:#ff7a00;}
-.hero p{
-  font-size:18px;
-  margin-top:15px;
-  opacity:0;
-  transform:translateY(30px);
-  animation:slideFade 1.5s forwards;
-  animation-delay:0.3s;
-}
-.btn{
-  background:#ff7a00;
-  color:white;
-  padding:12px 28px;
-  text-decoration:none;
-  font-weight:bold;
-  opacity:0;
-  transform:translateY(30px);
-  animation:slideFade 1.8s forwards;
-  animation-delay:0.6s;
-}
-@keyframes slideFade {
-  to{opacity:1;transform:translateY(0);}
+display:flex;
+align-items:center;
+justify-content:space-between;
+flex-wrap:wrap;
+padding:60px 8%;
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+color:white;
 }
 
-/* SECTIONS */
-.section{
-  padding:70px 8%;
-  text-align:center;
-  background:rgba(255,255,255,0.3);
-  border-radius:12px;
-  margin-bottom:30px;
-  backdrop-filter:blur(4px);
+.hero-text{
+max-width:500px;
 }
-.section h2{
-  font-size:32px;
-  margin-bottom:40px;
-  color:#0f2747;
-}
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:30px;
-}
-.card{
-  background:rgba(255,255,255,0.8);
-  border-radius:12px;
-  overflow:hidden;
-  box-shadow:0 8px 20px rgba(0,0,0,0.1);
-  transition:0.3s;
-}
-.card:hover{
-  transform:translateY(-8px);
-  box-shadow:0 12px 25px rgba(0,0,0,0.2);
-}
-.card img{
-  width:100%;
-  height:220px;
-  object-fit:cover;
-}
-.card-content{ padding:18px; text-align:left;}
-.price{ color:#ff7a00;font-weight:bold;font-size:16px;margin-top:8px;}
 
-/* CONTACT */
-.contact{
-  background:rgba(15,39,71,0.3);
-  color:white;
-  text-align:center;
-  padding:60px 8%;
-  border-radius:12px;
-  backdrop-filter:blur(4px);
+.hero-text h1{
+font-size:42px;
+margin:0;
 }
-.contact h2{ color:#ff7a00;}
+
+.hero-text p{
+margin-top:15px;
+font-size:18px;
+}
+
+.hero img{
+width:320px;
+border-radius:20px;
+box-shadow:0 15px 30px rgba(0,0,0,0.4);
+}
+
+/* PRODUCTS */
+.products{
+padding:60px 8%;
+text-align:center;
+}
+
+.products h2{
+font-size:32px;
+margin-bottom:40px;
+}
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.product{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 20px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.product:hover{
+transform:translateY(-10px);
+}
+
+.product h3{
+margin:0;
+font-size:22px;
+color:#203a43;
+}
+
+.price{
+font-size:24px;
+color:green;
+margin-top:15px;
+font-weight:bold;
+}
+
+.tag{
+margin-top:10px;
+display:inline-block;
+padding:5px 12px;
+background:orange;
+color:white;
+border-radius:20px;
+font-size:14px;
+}
+
+/* MAP */
+.map{
+padding:50px 8%;
+background:white;
+text-align:center;
+}
+
+iframe{
+width:100%;
+height:350px;
+border-radius:15px;
+}
 
 /* FOOTER */
 footer{
-  background:#081a30;
-  color:white;
-  text-align:center;
-  padding:20px;
-  font-size:14px;
-  border-radius:12px 12px 0 0;
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
 }
 
-/* FLOAT BUTTONS */
+/* WHATSAPP BUTTON */
 .whatsapp{
-  position:fixed; bottom:20px; right:20px;
-  background:#25D366; color:white; padding:15px;
-  border-radius:50%; text-decoration:none; font-size:18px;
-}
-.call{
-  position:fixed; bottom:80px; right:20px;
-  background:#ff7a00; color:white; padding:15px;
-  border-radius:50%; text-decoration:none;
+position:fixed;
+bottom:20px;
+right:20px;
+background:green;
+color:white;
+padding:15px 18px;
+border-radius:50%;
+font-size:22px;
+text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
 }
 </style>
 </head>
 
 <body>
 
-<header>
-  <div class="logo">Shree Ramesh Construction Material</div>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#products">Products</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
-
+<!-- HERO SECTION -->
 <section class="hero">
-  <h1>Shree Ramesh <span>Construction Material</span></h1>
-  <p>Premium Quality Construction Materials in Gorakhpur.</p>
-  <a href="tel:9792246824" class="btn">Get Best Price</a>
+<div class="hero-text">
+<h1>Vinay Building Materials</h1>
+<p>Strong Materials for Strong Construction</p>
+<p><b>Location:</b> Raji Akla No.1, Post Gulhariya Bazar, Gorakhpur</p>
+<p style="margin-top:15px;color:#ffd700;">
+✔ Contractor Special Rate Available  
+✔ Bulk Order Available
+</p>
+</div>
+
+<img src="papa.png" alt="Founder">
 </section>
 
-<section id="products" class="section">
-  <h2>Products & Prices</h2>
-  <div class="grid">
+<!-- PRODUCTS -->
+<section class="products">
+<h2>Today's Price List</h2>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1575456074261-7ce4078b76b7" alt="Cement Bags">
-      <div class="card-content">
-        <h3>Cement</h3>
-        <p class="price">₹350 / Bag</p>
-      </div>
-    </div>
+<div class="product-grid">
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1619902122750-3cc07c64b7ae" alt="TMT Sariya">
-      <div class="card-content">
-        <h3>TMT Sariya</h3>
-        <p class="price">₹46000 / Ton</p>
-      </div>
-    </div>
+<div class="product">
+<h3>Cement</h3>
+<div class="price">₹ 380 / bag</div>
+<span class="tag">Bulk Available</span>
+</div>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df" alt="Stone Gitti">
-      <div class="card-content">
-        <h3>Stone Gitti (20mm/40mm)</h3>
-        <p class="price">₹55 / Cubic Ft</p>
-      </div>
-    </div>
+<div class="product">
+<h3>TMT Sariya</h3>
+<div class="price">₹ 60 / kg</div>
+<span class="tag">Best Quality</span>
+</div>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd" alt="River Sand">
-      <div class="card-content">
-        <h3>River Sand (Balu)</h3>
-        <p class="price">₹45 / Cubic Ft</p>
-      </div>
-    </div>
+<div class="product">
+<h3>Gitti</h3>
+<div class="price">₹ 55 / cubic ft</div>
+<span class="tag">Fast Delivery</span>
+</div>
 
-  </div>
+<div class="product">
+<h3>Balua (Sand)</h3>
+<div class="price">₹ 45 / cubic ft</div>
+<span class="tag">Premium Grade</span>
+</div>
+
+</div>
 </section>
 
-<section id="contact" class="contact">
-  <h2>Contact Shree Ramesh Construction Material</h2>
-  <p>📍 Raji Akala No.1, Gulhariya Medical College Road, Gorakhpur</p>
-  <p>📞 9792246824 | 8400879638</p>
-  <a href="tel:9792246824" class="btn">Call Now</a>
+<!-- GOOGLE MAP -->
+<section class="map">
+<h2>Our Location</h2>
+<iframe src="https://www.google.com/maps?q=Raji+Akla+No.1+Gulhariya+Bazar+Gorakhpur&output=embed"></iframe>
 </section>
 
-<footer>© 2026 Shree Ramesh Construction Material | All Rights Reserved</footer>
+<footer>
+© 2026 Vinay Building Materials | All Rights Reserved
+</footer>
 
-<a class="whatsapp" href="https://wa.me/919792246824">W</a>
-<a class="call" href="tel:9792246824">📞</a>
+<!-- WHATSAPP BUTTON -->
+<a class="whatsapp" href="https://wa.me/91XXXXXXXXXX" target="_blank">🟢</a>
 
 </body>
 </html>
