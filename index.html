@@ -4,7 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Shree Ramesh Construction Material</title>
+<meta name="description" content="Shree Ramesh Construction Material - Best construction material supplier in Gorakhpur. Cement, TMT Sariya, Gitti & Balu available at best rates.">
 
+<!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
@@ -40,14 +42,20 @@ font-size:14px;
 
 /* HERO */
 .hero{
-background:#0f2747;
+background:linear-gradient(rgba(15,39,71,0.85),rgba(15,39,71,0.85)),
+url("https://images.unsplash.com/photo-1581091012184-49dd9f81f0ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080");
+background-size:cover;
+background-position:center;
 color:white;
-padding:80px 8%;
-text-align:center;
+height:85vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+padding:0 8%;
 }
 
 .hero h1{
-font-size:40px;
+font-size:42px;
 margin:0;
 }
 
@@ -58,6 +66,7 @@ color:#ff7a00;
 .hero p{
 font-size:18px;
 margin-top:15px;
+max-width:600px;
 }
 
 .btn{
@@ -72,7 +81,31 @@ display:inline-block;
 font-weight:bold;
 }
 
-/* FEATURE ICON SECTION */
+/* SECTION */
+.section{
+padding:70px 8%;
+text-align:center;
+}
+
+.section h2{
+font-size:32px;
+margin-bottom:40px;
+color:#0f2747;
+}
+
+.product-list{
+text-align:left;
+max-width:500px;
+margin:0 auto;
+font-size:20px;
+line-height:2.2;
+}
+
+.product-list b{
+color:#ff7a00;
+}
+
+/* ICON FEATURES */
 .features{
 display:flex;
 justify-content:center;
@@ -105,6 +138,26 @@ margin:0;
 color:#333;
 }
 
+/* CONTACT */
+.contact{
+background:#0f2747;
+color:white;
+text-align:center;
+padding:60px 8%;
+}
+
+.contact h2{
+color:#ff7a00;
+}
+
+iframe{
+border-radius:12px;
+width:100%;
+height:350px;
+border:0;
+margin-top:20px;
+}
+
 /* FOOTER */
 footer{
 background:#081a30;
@@ -112,6 +165,31 @@ color:white;
 text-align:center;
 padding:20px;
 font-size:14px;
+}
+
+/* FLOAT BUTTONS */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50%;
+text-decoration:none;
+font-size:20px;
+}
+
+.call{
+position:fixed;
+bottom:80px;
+right:20px;
+background:#ff7a00;
+color:white;
+padding:15px;
+border-radius:50%;
+text-decoration:none;
+font-size:18px;
 }
 </style>
 </head>
@@ -122,17 +200,31 @@ font-size:14px;
 <div class="logo">Shree Ramesh Construction Material</div>
 <nav>
 <a href="#">Home</a>
-<a href="#">Contact</a>
+<a href="#products">Products</a>
+<a href="#contact">Contact</a>
 </nav>
 </header>
 
+<!-- HERO -->
 <section class="hero">
 <h1>Shree Ramesh <span>Construction Material</span></h1>
-<p>Premium Quality Construction Materials in Gorakhpur</p>
-<a href="tel:9792246824" class="btn">Call Now</a>
+<p>Premium Quality Construction Materials in Gorakhpur. Best brands at best rates.</p>
+<a href="tel:9792246824" class="btn">Get Best Price</a>
 </section>
 
-<!-- SIMPLE ICON FEATURES -->
+<!-- PRODUCTS -->
+<section id="products" class="section">
+<h2>Products & Prices</h2>
+
+<div class="product-list">
+<p><b>Cement:</b> ₹350 / Bag</p>
+<p><b>TMT Sariya:</b> ₹46,000 / Ton</p>
+<p><b>Stone Gitti:</b> ₹55 / Cubic Ft</p>
+<p><b>River Sand (Balu):</b> ₹45 / Cubic Ft</p>
+</div>
+</section>
+
+<!-- ICON FEATURES -->
 <section class="features">
 
 <div class="feature-box">
@@ -157,9 +249,30 @@ font-size:14px;
 
 </section>
 
+<!-- CONTACT -->
+<section id="contact" class="contact">
+<h2>Contact Us</h2>
+<p>📍 Raji Akala No.1, Gulhariya Medical College Road, Gorakhpur</p>
+<p>📞 9792246824 | 8400879638</p>
+<a href="tel:9792246824" class="btn">Call Now</a>
+
+<iframe 
+src="https://www.google.com/maps?q=Raji%20Akala%20No.1%2C%20Gulhariya%20Medical%20College%20Road%2C%20Gorakhpur&output=embed"
+loading="lazy">
+</iframe>
+</section>
+
 <footer>
 © 2026 Shree Ramesh Construction Material | All Rights Reserved
 </footer>
+
+<a class="whatsapp" href="https://wa.me/919792246824">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+<a class="call" href="tel:9792246824">
+<i class="fas fa-phone"></i>
+</a>
 
 </body>
 </html>
