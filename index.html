@@ -4,9 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Shree Ramesh Construction Material</title>
-<meta name="description" content="Shree Ramesh Construction Material - Best construction material supplier in Gorakhpur. Cement, TMT Sariya, Gitti & Balu available at best rates.">
+<meta name="description" content="Best construction material supplier in Gorakhpur. Cement, TMT Sariya, Gitti & Balu available at best rates.">
 
-<!-- FONT AWESOME -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
@@ -93,18 +92,6 @@ margin-bottom:40px;
 color:#0f2747;
 }
 
-.product-list{
-text-align:left;
-max-width:500px;
-margin:0 auto;
-font-size:20px;
-line-height:2.2;
-}
-
-.product-list b{
-color:#ff7a00;
-}
-
 /* CONTACT */
 .contact{
 background:#0f2747;
@@ -117,7 +104,7 @@ padding:60px 8%;
 color:#ff7a00;
 }
 
-/* LIVE MAP */
+/* GOOGLE MAP */
 iframe{
 border-radius:12px;
 width:100%;
@@ -126,41 +113,95 @@ border:0;
 margin-top:20px;
 }
 
-/* TRUST FEATURES */
-.trust-container{
+/* BADGE SECTION */
+.badge-section{
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
-margin-top:40px;
-gap:25px;
+gap:40px;
+margin-top:50px;
 }
 
-.trust-item{
-background:linear-gradient(135deg,#ffd700,#ffb700);
-color:#0f2747;
-border-radius:15px;
-width:200px;
+/* 15 YEARS GREEN BADGE */
+.badge-green{
+width:180px;
 height:180px;
+background:#2ecc71;
+border-radius:50%;
 display:flex;
 flex-direction:column;
-align-items:center;
 justify-content:center;
+align-items:center;
+color:white;
+font-weight:bold;
+text-align:center;
+box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
+
+.badge-green i{
+font-size:40px;
+margin-bottom:10px;
+}
+
+/* VERIFIED RIBBON */
+.ribbon-badge{
+position:relative;
+width:180px;
+height:180px;
+background:#2ecc71;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+font-size:50px;
+box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
+
+.ribbon-badge::after{
+content:"";
+position:absolute;
+bottom:-40px;
+width:60px;
+height:60px;
+background:black;
+clip-path:polygon(0 0,100% 0,50% 100%);
+}
+
+/* FAST DELIVERY */
+.delivery-icon{
+width:180px;
+height:180px;
+background:white;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:50px;
+color:black;
+box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* TRUSTED SELLER GOLD */
+.gold-badge{
+width:200px;
+height:200px;
+background:linear-gradient(135deg,#f1c40f,#f39c12);
+border-radius:50%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
 text-align:center;
 font-weight:bold;
+color:black;
+box-shadow:0 8px 20px rgba(0,0,0,0.4);
 padding:20px;
-box-shadow:0 6px 20px rgba(0,0,0,0.25);
-transition:0.3s;
-font-size:16px;
 }
 
-.trust-item:hover{
-transform:translateY(-8px);
-}
-
-.trust-item .icon{
+.gold-badge i{
 font-size:40px;
-margin-bottom:15px;
-color:#0f2747;
+margin-bottom:10px;
 }
 
 /* FOOTER */
@@ -204,65 +245,44 @@ text-decoration:none;
 <div class="logo">Shree Ramesh Construction Material</div>
 <nav>
 <a href="#">Home</a>
-<a href="#products">Products</a>
 <a href="#contact">Contact</a>
 </nav>
 </header>
 
-<!-- HERO SECTION -->
 <section class="hero">
 <h1>Shree Ramesh <span>Construction Material</span></h1>
 <p>Premium Quality Construction Materials in Gorakhpur. Best brands at best rates.</p>
 <a href="tel:9792246824" class="btn">Get Best Price</a>
 </section>
 
-<!-- PRODUCTS SECTION -->
-<section id="products" class="section">
-<h2>Products & Prices</h2>
-
-<div class="product-list">
-<p><b>Cement:</b> ₹350 / Bag</p>
-<p><b>TMT Sariya:</b> ₹46,000 / Ton</p>
-<p><b>Stone Gitti:</b> ₹55 / Cubic Ft</p>
-<p><b>River Sand (Balu):</b> ₹45 / Cubic Ft</p>
-</div>
-</section>
-
-<!-- CONTACT SECTION -->
 <section id="contact" class="contact">
-<h2>Contact Shree Ramesh Construction Material</h2>
+<h2>Contact Us</h2>
 <p>📍 Raji Akala No.1, Gulhariya Medical College Road, Gorakhpur</p>
 <p>📞 9792246824 | 8400879638</p>
-<a href="tel:9792246824" class="btn">Call Now</a>
 
-<!-- LIVE GOOGLE MAP -->
 <iframe 
 src="https://www.google.com/maps?q=Raji%20Akala%20No.1%2C%20Gulhariya%20Medical%20College%20Road%2C%20Gorakhpur&output=embed"
-allowfullscreen="" 
 loading="lazy">
 </iframe>
 
-<!-- TRUST FEATURES -->
-<div class="trust-container">
+<div class="badge-section">
 
-<div class="trust-item">
-<i class="fas fa-award icon"></i>
-15+ Years Experience
+<div class="badge-green">
+<i class="fas fa-award"></i>
+15+ Years<br>Experience
 </div>
 
-<div class="trust-item">
-<i class="fas fa-shield-halved icon"></i>
-Trusted Seller
+<div class="ribbon-badge">
+<i class="fas fa-check"></i>
 </div>
 
-<div class="trust-item">
-<i class="fas fa-check-circle icon"></i>
-Quality Checked
+<div class="delivery-icon">
+<i class="fas fa-truck-fast"></i>
 </div>
 
-<div class="trust-item">
-<i class="fas fa-truck-fast icon"></i>
-Fast Delivery
+<div class="gold-badge">
+<i class="fas fa-shield-halved"></i>
+Trusted Seller<br>Quality Guarantee
 </div>
 
 </div>
@@ -282,4 +302,4 @@ Fast Delivery
 </a>
 
 </body>
-  </html>
+</html>
