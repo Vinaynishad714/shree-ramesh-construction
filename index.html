@@ -1,1 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Shree Ramesh Construction Material</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#f4f4f4;
+}
+
+header{
+background:#0f2f57;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+header h1{
+margin:0;
+font-size:28px;
+}
+
+nav{
+background:#ff7a00;
+padding:10px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.hero{
+background:#0f2f57;
+color:white;
+padding:60px;
+text-align:center;
+}
+
+.hero h2{
+font-size:40px;
+}
+
+.container{
+width:90%;
+margin:auto;
+padding:30px;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 10px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.card h3{
+color:#0f2f57;
+}
+
+.price{
+color:#ff7a00;
+font-size:22px;
+font-weight:bold;
+}
+
+button{
+background:#ff7a00;
+color:white;
+border:none;
+padding:10px 15px;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#e56b00;
+}
+
+.trust{
+display:flex;
+justify-content:space-around;
+margin-top:40px;
+text-align:center;
+}
+
+.trust div{
+background:white;
+padding:20px;
+border-radius:10px;
+width:30%;
+box-shadow:0 5px 10px rgba(0,0,0,0.1);
+}
+
+.order{
+margin-top:40px;
+background:white;
+padding:20px;
+border-radius:10px;
+}
+
+input,select{
+width:100%;
+padding:10px;
+margin:10px 0;
+}
+
+footer{
+background:#0f2f57;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+.admin{
+background:white;
+padding:20px;
+margin-top:40px;
+border-radius:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Shree Ramesh Construction Material</h1>
+<p>All Construction Material Available</p>
+</header>
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#">Products</a>
+<a href="#">Order</a>
+<a href="#">Contact</a>
+
+</nav>
+
+<div class="hero">
+
+<h2>BUILD YOUR FUTURE</h2>
+<p>Quality Construction Materials</p>
+
+</div>
+
+<div class="container">
+
+<h2>Our Materials</h2>
+
+<div class="products">
+
+<div class="card">
+<h3>Sariya</h3>
+<p class="price" id="sariya">₹60000 / Ton</p>
+</div>
+
+<div class="card">
+<h3>Gitti</h3>
+<p class="price" id="gitti">₹1200 / Trolley</p>
+</div>
+
+<div class="card">
+<h3>Balu</h3>
+<p class="price" id="balu">₹1100 / Trolley</p>
+</div>
+
+<div class="card">
+<h3>Cement</h3>
+<p class="price" id="cement">₹380 / Bag</p>
+</div>
+
+</div>
+
+<div class="trust">
+
+<div>
+<h3>✔ Trusted Shop</h3>
+<p>100% Genuine Material</p>
+</div>
+
+<div>
+<h3>🚚 Fast Delivery</h3>
+<p>Quick Supply</p>
+</div>
+
+<div>
+<h3>🏗 Quality Products</h3>
+<p>Best Construction Materials</p>
+</div>
+
+</div>
+
+<div class="order">
+
+<h2>Customer Order</h2>
+
+<input placeholder="Your Name">
+
+<input placeholder="Mobile Number">
+
+<select>
+<option>Select Material</option>
+<option>Sariya</option>
+<option>Gitti</option>
+<option>Balu</option>
+<option>Cement</option>
+</select>
+
+<input placeholder="Quantity">
+
+<button>Place Order</button>
+
+</div>
+
+<div class="admin">
+
+<h2>Admin Panel (Price Change)</h2>
+
+<input id="sariyaInput" placeholder="Sariya Price">
+
+<input id="gittiInput" placeholder="Gitti Price">
+
+<input id="baluInput" placeholder="Balu Price">
+
+<input id="cementInput" placeholder="Cement Price">
+
+<button onclick="updatePrice()">Update Price</button>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>Address:</p>
+
+<p>
+Raji Akala No.1  
+Post Gulhariya Bazar  
+Medical College Road  
+Gorakhpur  
+Metropolitan School se 300m piche
+</p>
+
+<p>📞 9792246824 | 8400879638</p>
+
+</footer>
+
+<script>
+
+function updatePrice(){
+
+let sariya=document.getElementById("sariyaInput").value
+let gitti=document.getElementById("gittiInput").value
+let balu=document.getElementById("baluInput").value
+let cement=document.getElementById("cementInput").value
+
+if(sariya) document.getElementById("sariya").innerText="₹"+sariya
+if(gitti) document.getElementById("gitti").innerText="₹"+gitti
+if(balu) document.getElementById("balu").innerText="₹"+balu
+if(cement) document.getElementById("cement").innerText="₹"+cement
+
+alert("Price Updated")
+
+}
+
+</script>
+
+</body>
+</html>
